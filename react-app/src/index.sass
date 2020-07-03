@@ -1,9 +1,25 @@
-$primary: #0C0904
-$secondary: #CBB77E
-$tertiary: #fff
+// colors
+$global-black: #0C0904
+$global-gold: #CBB77E
+$global-white: #fff
+$global-light-gray: #CBCDCA
+$global-medium-gray: #656769
+
+// typefaces
 $header-font: 'Notable', sans-serif
 $regular-font: 'Noto Sans JP', sans-serif
 
+// selectors
 h1
-  color: $secondary
+  color: $global-gold
   font-family: $header-font
+
+main
+  background: $global-black
+  box-shadow: 0 0.25rem 2.5rem 0.25rem $global-medium-gray
+  display: flex
+  font-size: 2rem
+  justify-content: center
+  margin: auto
+  padding: 1rem
+      
