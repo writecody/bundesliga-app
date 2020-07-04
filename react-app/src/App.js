@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Main from '../src/pages/main/main';
-import Teams from '../src/pages/teams/teams';
+import MainPage from './pages/mainPage/mainPage';
+import TeamPage from '../src/pages/teamPage/teamPage';
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -17,12 +17,12 @@ function App() {
       <div className="App">
         
         <div>
-          <Link to="/" className="link">Main</Link>
-          <Link to="/teams" className="link">Teams</Link>
+          <Link to="/" className="link">Main Page</Link>
+          <Link to="/teams" className="link">Team Page</Link>
         </div>
 
-        <Route exact path="/" component={Main} />
-        <Route exact path="/teams" component={Teams} />
+        <Route exact path="/" component={MainPage} />
+        <Route exact path="/teams" component={TeamPage} />
 
       </div>
 
