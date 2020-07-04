@@ -1,11 +1,12 @@
 import React from 'react';
+import Teams from '../teams/teams';
 
 const Main = () => {
 
   return (
     <>
       <main>
-        <h1>Bundesliga</h1>
+        <Teams></Teams>
       </main>
     </>
   )

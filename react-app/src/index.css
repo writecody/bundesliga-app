@@ -2,14 +2,14 @@ h1 {
   color: #CBB77E;
   font-family: "Notable", sans-serif; }
 
-main {
-  background: #0C0904;
-  box-shadow: 0 0.25rem 2.5rem 0.25rem #656769;
-  display: flex;
-  font-size: 2rem;
-  justify-content: center;
+link {
+  display: block; }
+
+.teams-container {
+  height: 70vh;
+  border: 1px solid red;
   margin: auto;
-  padding: 1rem; 
-}
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=index.css.map */

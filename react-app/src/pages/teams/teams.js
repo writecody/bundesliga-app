@@ -1,11 +1,13 @@
 import React from 'react';
+import Team from '../../components/team/team';
+import '../../index.css';
 
-const Teams = () => {
+const Teams = ({teams}) => {
 
   return (
     <>
-      <main>
-        <h1>Teams</h1>
+      <main className="teams-container">
+        teams
       </main>
     </>
   )
