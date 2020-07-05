@@ -2,25 +2,27 @@
 $global-black: #0C0904
 $global-gold: #CBB77E
 $global-white: #fffaf0
-$global-light-gray: #CBCDCA
+$global-light-gray: #FFF0F5
 $global-medium-gray: #656769
 $global-hot-pink: #EA324E
 
 // typefaces
-$header-font: 'Notable', sans-serif
 $regular-font: 'Noto Sans JP', sans-serif
 
 // selectors
+body
+  background: $global-white
+
 h1
-  color: $global-black
-  font-family: $header-font
-  text-shadow: 0 -0.0625rem 0.0625rem $global-light-gray
+  color: $global-hot-pink
+  font-family: $regular-font
+  letter-spacing: 0.25rem
+  text-shadow: 0 0.0625rem 0.0625rem $global-black
 
 link
   display: block
   
 .header
-  background: $global-black
   display: flex
   font-size: clamp(1rem, 2vw, 2rem)
   justify-content: center
@@ -30,12 +32,13 @@ link
       
 .teams-container
   align-items: center
-  box-shadow: 0 0.125rem 1.5rem 0.25rem $global-light-gray
+  box-shadow: 0 0.125rem 1rem 0.125rem gray
   display: flex
   flex-wrap: wrap
   justify-content: center
-  margin: 1rem auto
+  margin: 0 auto 1rem
   padding: 1rem
+  width: 90vw
 
 .team-logo
   height: 8rem
@@ -44,7 +47,7 @@ link
   align-items: center
   box-shadow: 0 0.125rem 0.25rem rgba(203, 205, 202, 0.8)
   display: flex
+  justify-content: center 
   margin: 1rem
   padding: 1rem
-  justify-content: center 
     

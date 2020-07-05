@@ -1,13 +1,16 @@
+body {
+  background: #fffaf0; }
+
 h1 {
-  color: #0C0904;
-  font-family: "Notable", sans-serif;
-  text-shadow: 0 -0.0625rem 0.0625rem #CBCDCA; }
+  color: #EA324E;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.25rem;
+  text-shadow: 0 0.0625rem 0.0625rem #0C0904; }
 
 link {
   display: block; }
 
 .header {
-  background: #0C0904;
   display: flex;
   font-size: clamp(1rem, 2vw, 2rem);
   justify-content: center;
@@ -17,12 +20,13 @@ link {
 
 .teams-container {
   align-items: center;
-  box-shadow: 0 0.125rem 1.5rem 0.25rem #CBCDCA;
+  box-shadow: 0 0.125rem 1rem 0.125rem gray;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem auto;
-  padding: 1rem; }
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  width: 90vw; }
 
 .team-logo {
   height: 8rem; }
@@ -31,8 +35,8 @@ link {
   align-items: center;
   box-shadow: 0 0.125rem 0.25rem rgba(203, 205, 202, 0.8);
   display: flex;
+  justify-content: center;
   margin: 1rem;
-  padding: 1rem;
-  justify-content: center; }
+  padding: 1rem; }
 
 /*# sourceMappingURL=index.css.map */
