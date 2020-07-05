@@ -1,0 +1,3 @@
+- [ ] Remove routing
+- [ ] On team icon click, container contains team info, team icon thumbnails in horizontal-scrollable section below team info
+- [ ] On team icon click, icon container flips, shows team name and 'Details' or 'Team Info' link
