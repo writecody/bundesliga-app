@@ -12,7 +12,8 @@ link {
   font-size: clamp(1rem, 2vw, 2rem);
   justify-content: center;
   margin: auto;
-  padding: 1rem; }
+  padding: 1rem;
+  text-align: center; }
 
 .teams-container {
   align-items: center;

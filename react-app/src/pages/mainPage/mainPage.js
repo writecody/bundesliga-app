@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <>
       <main>
-        <Header title={'Bundesliga'} />
+        <Header title={'Teams of the Bundesliga'} />
         <TeamsContainer />
       </main>
     </>
