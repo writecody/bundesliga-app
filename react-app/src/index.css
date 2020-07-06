@@ -1,14 +1,18 @@
 body {
-  background: #fffaf0; }
+  background: no-repeat;
+  background-image: url("./assets/soccer-ball-on-field.png");
+  background-attachment: fixed;
+  font-family: "Noto Sans JP", sans-serif; }
 
 h1 {
   color: #EA324E;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Contrail One", cursive;
   letter-spacing: 0.25rem;
   text-shadow: 0 0.0625rem 0.0625rem #0C0904; }
 
-link {
-  display: block; }
+p {
+  margin: 0 auto 1rem;
+  width: 70%; }
 
 .header {
   display: flex;
@@ -20,7 +24,7 @@ link {
 
 .teams-container {
   align-items: center;
-  box-shadow: 0 0.125rem 1rem 0.125rem gray;
+  box-shadow: 0 0.125rem 1rem 0.125rem #0C0904;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -28,12 +32,48 @@ link {
   padding: 1rem;
   width: 90vw; }
 
+.team-page-photo {
+  box-shadow: 0 0.125rem 0.25rem #0C0904;
+  margin: auto;
+  width: 70%; }
+
+.team-stadium-image {
+  box-shadow: 0 0.125rem 0.25rem #0C0904;
+  margin: auto;
+  width: 70%; }
+
+.team-stadium-name {
+  font-size: 1.5rem; }
+
+.photo-caption {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  width: 70%;
+  margin: 1rem auto; }
+
+.team-summary {
+  margin: 1rem auto; }
+
+.team-info-container {
+  background-image: url("./assets/team-info-container-background.png");
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80vw; }
+
+.horizontal-bar {
+  background: #0C0904;
+  height: 2rem; }
+
 .team-logo {
   height: 8rem; }
 
 .team-logo-container {
   align-items: center;
-  box-shadow: 0 0.125rem 0.25rem rgba(203, 205, 202, 0.8);
+  background: #fffaf0;
+  box-shadow: 0 0.125rem 0.25rem #0C0904;
   display: flex;
   justify-content: center;
   margin: 1rem;
