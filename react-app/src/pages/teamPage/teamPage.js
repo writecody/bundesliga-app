@@ -40,26 +40,26 @@ const TeamPage = (
 
   return (
     <>
-      <main className="team-info-container">
+      <main className="team-page__info-container">
 
-        <div className="horizontal-bar" />
+        <div className="team-page__horizontal-bar" />
 
         <h2 style={teamHeaderStyle}>{teamName}</h2>
 
         {/* TODO: to add alt text, invoke a function that returns a string including the teamName and concatenates additional string content */}
 
-        <img src={DortmundTeamImage} className="team-page-photo"></img>
+        <img src={DortmundTeamImage} className="team-page__photo"></img>
 
         {/* <p>{teamSummary}</p> */}
-        <p className="team-summary">Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball. Since 1974, Dortmund have played their home games at Westfalenstadion; the stadium is the largest in Germany, and Dortmund has the highest average attendance of any association football club in the world.</p>
+        <p className="team-page__team-summary">Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball. Since 1974, Dortmund have played their home games at Westfalenstadion; the stadium is the largest in Germany, and Dortmund has the highest average attendance of any association football club in the world.</p>
         
         <h3 style={teamSubheadStyle}>Stadium and Location</h3>
 
-        <img src={DortmundStadiumExterior} alt={teamStadiumName} className="team-page-photo"/>
+        <img src={DortmundStadiumExterior} alt={teamStadiumName} className="team-page__stadium-image"/>
         {/* <img src={teamStadiumImageFilePath} alt={teamStadiumName} /> */}
         {/* <p><span>{teamStadiumName}</span></p> */}
         
-        <p className="photo-caption">{teamStadiumName} at {teamLocation}</p>
+        <p className="team-page__photo-caption">{teamStadiumName} at {teamLocation}</p>
         
         {/* <p><span className="team-stadium-name">Westfalenstadion</span></p> */}
 

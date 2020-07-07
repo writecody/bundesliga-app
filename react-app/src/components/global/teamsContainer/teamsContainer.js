@@ -57,9 +57,9 @@ const TeamsContainer = () => {
           {teamLogos.map((object, index) => {
             return (
               <>
-              <div className="team-logo-container">
+              <div className="teams-container__logo-container">
                 <img 
-                  className="team-logo" 
+                  className="teams-container__logo" 
                   key={index} 
                   src={object.imageFile} 
                   alt={object.altText}>

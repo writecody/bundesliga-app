@@ -1,14 +1,16 @@
 body {
   background: no-repeat;
-  background-image: url("./assets/soccer-ball-on-field.png");
+  background-image: url("./assets/cartoon-soccer-ball-on-field.png");
   background-attachment: fixed;
-  font-family: "Noto Sans JP", sans-serif; }
+  font-family: 'Noto Sans JP', sans-serif; }
 
 h1 {
-  color: #EA324E;
+  background: #0C0904;
+  color: #fffaf0;
   font-family: "Contrail One", cursive;
   letter-spacing: 0.25rem;
-  text-shadow: 0 0.0625rem 0.0625rem #0C0904; }
+  text-shadow: -0.625rem 0.0625rem 0.0625rem #EA324E;
+  width: 100vw; }
 
 p {
   margin: 0 auto 1rem;
@@ -16,11 +18,40 @@ p {
 
 .header {
   display: flex;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 3vw, 3rem);
   justify-content: center;
   margin: auto;
   padding: 1rem;
   text-align: center; }
+
+.team-page__photo {
+  box-shadow: 0 0.125rem 0.25rem #0C0904;
+  margin: auto;
+  width: 70%; }
+.team-page__stadium-image {
+  box-shadow: 0 0.125rem 0.25rem #0C0904;
+  margin: auto;
+  width: 70%; }
+.team-page__stadium-name {
+  font-size: 1.5rem; }
+.team-page__photo-caption {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  width: 70%;
+  margin: 1rem auto; }
+.team-page__team-summary {
+  margin: 1rem auto; }
+.team-page__info-container {
+  background-image: url("./assets/team-info-container-background.png");
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80vw; }
+.team-page__horizontal-bar {
+  background: #0C0904;
+  height: 2rem; }
 
 .teams-container {
   align-items: center;
@@ -31,52 +62,15 @@ p {
   margin: 0 auto 1rem;
   padding: 1rem;
   width: 90vw; }
-
-.team-page-photo {
-  box-shadow: 0 0.125rem 0.25rem #0C0904;
-  margin: auto;
-  width: 70%; }
-
-.team-stadium-image {
-  box-shadow: 0 0.125rem 0.25rem #0C0904;
-  margin: auto;
-  width: 70%; }
-
-.team-stadium-name {
-  font-size: 1.5rem; }
-
-.photo-caption {
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  width: 70%;
-  margin: 1rem auto; }
-
-.team-summary {
-  margin: 1rem auto; }
-
-.team-info-container {
-  background-image: url("./assets/team-info-container-background.png");
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 80vw; }
-
-.horizontal-bar {
-  background: #0C0904;
-  height: 2rem; }
-
-.team-logo {
-  height: 8rem; }
-
-.team-logo-container {
-  align-items: center;
-  background: #fffaf0;
-  box-shadow: 0 0.125rem 0.25rem #0C0904;
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  padding: 1rem; }
+  .teams-container__logo {
+    height: 8rem; }
+  .teams-container__logo-container {
+    align-items: center;
+    background: #fffaf0;
+    box-shadow: 0 0.125rem 0.25rem #0C0904;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem; }
 
 /*# sourceMappingURL=index.css.map */
