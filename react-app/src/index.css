@@ -72,5 +72,17 @@ p {
     justify-content: center;
     margin: 1rem;
     padding: 1rem; }
+    .teams-container__logo-container:hover {
+      box-shadow: 0 0.25rem 0.5rem #0C0904;
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+      transition-property: transform;
+      transition-duration: 333ms; }
+    .teams-container__logo-container:active {
+      box-shadow: 0 0.25rem 0.5rem #EA324E;
+      cursor: pointer;
+      transform: scale(0.95, 0.95);
+      transition-property: transform;
+      transition-duration: 250ms; }
 
 /*# sourceMappingURL=index.css.map */

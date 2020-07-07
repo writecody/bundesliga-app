@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../../index.css';
-import BundesligaLogo from '../../../assets/bundesliga-logo.png';
 
 import AugsburgLogo from '../../../assets/augsburg-logo.png';
 import BayernLogo from '../../../assets/bayern-logo.png';

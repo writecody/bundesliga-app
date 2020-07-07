@@ -107,6 +107,22 @@ p {
     justify-content: center;
     margin: 1rem;
     padding: 1rem;
+
+    &:hover {
+      box-shadow: 0 0.25rem 0.5rem $global-black;
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+      transition-property: transform;
+      transition-duration: 333ms;
+    }
+
+    &:active {
+      box-shadow: 0 0.25rem 0.5rem $global-hot-pink;
+      cursor: pointer;
+      transform: scale(.95, .95);
+      transition-property: transform;
+      transition-duration: 250ms;
+    }
   }
 }
     
