@@ -18,11 +18,11 @@ function App() {
         
         <div>
           <Link to="/" className="link">Main Page</Link>
-          <Link to="/teams" className="link">Team Page</Link>
+          <Link to="/team" className="link">Team Page</Link>
         </div>
 
         <Route exact path="/" component={MainPage} />
-        <Route exact path="/teams" component={TeamPage} />
+        <Route exact path="/team" component={TeamPage} />
 
       </div>
 

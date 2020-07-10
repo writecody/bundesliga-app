@@ -20,19 +20,8 @@ const TeamPage = (
   const teamHeaderStyle = {
     color: teamPrimaryColor,
     fontFamily: 'Contrail One',
-    fontSize: '3rem',
     letterSpacing: '0.25rem',
     margin: '1rem auto',
-    textAlign: 'center',
-    textShadow: `0 0.0625rem 0.0625rem ${teamSecondaryColor}`
-  }
-
-  const teamSubheadStyle = {
-    color: teamPrimaryColor,
-    fontFamily: 'Contrail One',
-    fontSize: '2rem',
-    letterSpacing: '0.25rem',
-    margin: '0 auto 1rem',
     textAlign: 'center',
     textShadow: `0 0.0625rem 0.0625rem ${teamSecondaryColor}`
   }
@@ -52,7 +41,7 @@ const TeamPage = (
         {/* <p>{teamSummary}</p> */}
         <p className="team-page__team-summary">Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball. Since 1974, Dortmund have played their home games at Westfalenstadion; the stadium is the largest in Germany, and Dortmund has the highest average attendance of any association football club in the world.</p>
         
-        <h3 style={teamSubheadStyle}>Stadium and Location</h3>
+        <h3 style={teamHeaderStyle}>Stadium and Location</h3>
 
         <img src={DortmundStadiumExterior} alt={teamStadiumName} className="team-page__stadium-image"/>
         {/* <img src={teamStadiumImageFilePath} alt={teamStadiumName} /> */}
@@ -62,7 +51,7 @@ const TeamPage = (
         
         {/* <p><span className="team-stadium-name">Westfalenstadion</span></p> */}
 
-        <h3 style={teamSubheadStyle}>About the Team</h3>
+        <h3 style={teamHeaderStyle}>About the Team</h3>
 
         {/* <p>{teamBiography}</p> */}
         <p>In 2002, Borussia Dortmund won their third Bundesliga title. Dortmund had a remarkable run at the end of the season to overtake Bayer Leverkusen, securing the title on the final day. Manager Matthias Sammer became the first person in Borussia Dortmund history to win the Bundesliga as both a player and manager. In the same season, Borussia lost the final of the 2001–02 UEFA Cup to Dutch side Feyenoord.

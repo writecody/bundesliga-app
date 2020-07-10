@@ -1,4 +1,5 @@
-- [x] Remove routing
+- [x] Remove nested routing
 - [ ] Add all teams to database
-- [ ] Add photos to database
+- [ ] Add photos to database (including team logos)
 - [ ] On team icon click, icon container flips, shows team name and 'Details' or 'Team Info' link
+- [ ] Dyanmically display team info on /team/< teamname > page
