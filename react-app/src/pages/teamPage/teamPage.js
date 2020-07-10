@@ -1,6 +1,4 @@
 import React from 'react';
-import Team from '../../components/team/team';
-import Header from '../../components/global/header/header';
 import '../../index.css';
 import DortmundTeamImage from '../../assets/dortmund-team-image.jpeg';
 import DortmundStadiumExterior from '../../assets/dortmund-stadium-exterior.jpg';
@@ -11,12 +9,11 @@ const TeamPage = (
     teamLocation = 'Dortmund, North Rhine-Westphalia, Germany',
     teamStadiumName = 'Westfalenstadion',
     teamStadiumImageFilePath,
-    teamLogoImageFilePath, 
     teamSummary,
     teamBiography,
     teamMascot,
-    teamPrimaryColor = 'black',
-    teamSecondaryColor = 'yellow'
+    teamPrimaryColor = 'Black',
+    teamSecondaryColor = 'Yellow'
   }
 ) => {
 
@@ -26,6 +23,7 @@ const TeamPage = (
     fontSize: '3rem',
     letterSpacing: '0.25rem',
     margin: '1rem auto',
+    textAlign: 'center',
     textShadow: `0 0.0625rem 0.0625rem ${teamSecondaryColor}`
   }
 
@@ -35,6 +33,7 @@ const TeamPage = (
     fontSize: '2rem',
     letterSpacing: '0.25rem',
     margin: '0 auto 1rem',
+    textAlign: 'center',
     textShadow: `0 0.0625rem 0.0625rem ${teamSecondaryColor}`
   }
 
@@ -48,7 +47,7 @@ const TeamPage = (
 
         {/* TODO: to add alt text, invoke a function that returns a string including the teamName and concatenates additional string content */}
 
-        <img src={DortmundTeamImage} className="team-page__photo"></img>
+        <img src={DortmundTeamImage} alt="team-photo" className="team-page__photo"></img>
 
         {/* <p>{teamSummary}</p> */}
         <p className="team-page__team-summary">Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball. Since 1974, Dortmund have played their home games at Westfalenstadion; the stadium is the largest in Germany, and Dortmund has the highest average attendance of any association football club in the world.</p>

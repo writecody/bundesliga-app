@@ -16,12 +16,20 @@ app.get('/teams', async (req, res) => {
     const allTeams = await pool.query('SELECT * FROM team;');
     res.json(allTeams.rows);
   } catch (error) {
-    console.error('error.message');
+    console.error(error.message);
   }
 });
 
 // get one team
-
+app.get('/teams/:id', async (req, res) => {
+  try {
+    const {id} = req.params;
+    const team = await pool.query('SELECT * FROM team WHERE team_id = $1', [id]);
+    res.json(team.rows[0]);
+  } catch (error) {
+    console.error(error.message);
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server has started on port ${port}`);

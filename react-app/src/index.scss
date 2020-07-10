@@ -23,8 +23,9 @@ h1 {
   color: $global-white;
   font-family: $header-font;
   letter-spacing: 0.25rem;
-  text-shadow: -0.625rem 0.0625rem 0.0625rem $global-hot-pink;
-  width: 100vw;
+  padding: 1rem;
+  text-shadow: -3px 3px $global-hot-pink;
+  width: 90%;
 }
 
 p {
@@ -37,7 +38,6 @@ p {
   font-size: clamp(1rem, 3vw, 3rem);
   justify-content: center;
   margin: auto;
-  padding: 1rem;
   text-align: center;
 }
       
@@ -76,7 +76,7 @@ p {
     flex-direction: column;
     margin: 1rem auto;
     padding: 1rem;
-    width: 80vw;
+    width: 80%;
   }
 
   &__horizontal-bar {
@@ -93,7 +93,7 @@ p {
   justify-content: center;
   margin: 0 auto 1rem;
   padding: 1rem;
-  width: 90vw;
+  width: 90%;
   
   &__logo {
     height: 8rem;

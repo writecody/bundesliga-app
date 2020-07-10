@@ -9,8 +9,9 @@ h1 {
   color: #fffaf0;
   font-family: "Contrail One", cursive;
   letter-spacing: 0.25rem;
-  text-shadow: -0.625rem 0.0625rem 0.0625rem #EA324E;
-  width: 100vw; }
+  padding: 1rem;
+  text-shadow: -3px 3px #EA324E;
+  width: 90%; }
 
 p {
   margin: 0 auto 1rem;
@@ -21,7 +22,6 @@ p {
   font-size: clamp(1rem, 3vw, 3rem);
   justify-content: center;
   margin: auto;
-  padding: 1rem;
   text-align: center; }
 
 .team-page__photo {
@@ -48,7 +48,7 @@ p {
   flex-direction: column;
   margin: 1rem auto;
   padding: 1rem;
-  width: 80vw; }
+  width: 80%; }
 .team-page__horizontal-bar {
   background: #0C0904;
   height: 2rem; }
@@ -61,7 +61,7 @@ p {
   justify-content: center;
   margin: 0 auto 1rem;
   padding: 1rem;
-  width: 90vw; }
+  width: 90%; }
   .teams-container__logo {
     height: 8rem; }
   .teams-container__logo-container {
