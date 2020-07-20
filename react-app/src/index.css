@@ -11,7 +11,7 @@ h1 {
   letter-spacing: 0.25rem;
   padding: 1rem;
   text-shadow: -3px 3px #EA324E;
-  width: 90%; }
+  width: 70%; }
 
 h2 {
   font-size: 3rem; }
@@ -41,7 +41,7 @@ p {
   background: #0C0904;
   height: 2rem; }
 .team-page__photo {
-  box-shadow: 0 0.125rem 0.25rem #0C0904;
+  box-shadow: 0 0.125rem 0.25rem #fffaf0;
   margin: auto;
   width: 70%; }
 .team-page__photo-caption {
@@ -80,15 +80,12 @@ p {
     padding: 1rem; }
     .teams-container__logo-container:hover {
       box-shadow: 0 0.25rem 0.5rem #0C0904;
-      cursor: pointer;
-      transform: scale(1.05, 1.05);
-      transition-property: transform;
-      transition-duration: 333ms; }
+      cursor: pointer; }
     .teams-container__logo-container:active {
       box-shadow: 0 0.25rem 0.5rem #EA324E;
       cursor: pointer;
       transform: scale(0.95, 0.95);
       transition-property: transform;
-      transition-duration: 250ms; }
+      transition-duration: 150ms; }
 
 /*# sourceMappingURL=index.css.map */
