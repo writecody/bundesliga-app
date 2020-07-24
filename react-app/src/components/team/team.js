@@ -1,11 +1,7 @@
 import React, { useEffect, useState }from 'react';
 import {useParams} from 'react-router-dom';
 
-// make fetch call to server to get info for the team with the id in params
-
-function Team(
-  
-) {
+function Team() {
   let { teamId } = useParams();
 
   const [teamData, setTeamData] = useState({ teamData: {} });

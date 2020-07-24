@@ -25,25 +25,25 @@ import WerderBremenLogo from '../../../assets/werder-bremen-logo.png';
 import WolfsburgLogo from '../../../assets/wolfsburg-logo.png';
 
 const teamInfo = [
-  {imageFile: AugsburgLogo, altText: 'Augsburg logo', teamId: null}, 
+  {imageFile: DortmundLogo, altText: 'Dortmund logo', teamId: 1},
   {imageFile: BayernLogo, altText: 'Bayern logo', teamId: 2},
-  {imageFile: DortmundLogo, altText: 'Dortmund logo'},
-  {imageFile: DusseldorfLogo, altText: 'Dusseldorf logo'},
-  {imageFile: FrankfurtLogo, altText: 'Frankfurt logo'},
-  {imageFile: FreiburgLogo, altText: 'Freiburg logo'},
-  {imageFile: HamburgLogo, altText: 'Hamburg logo'},
-  {imageFile: HannoverLogo, altText: 'Hannover logo'},
-  {imageFile: HerthaLogo, altText: 'Hertha logo'},
-  {imageFile: HoffenheimLogo, altText: 'Hoffenheim logo'},
-  {imageFile: KolnLogo, altText: 'Koln logo'},
-  {imageFile: LeverkusenLogo, altText: 'Leverkusen logo'},
-  {imageFile: MainzLogo, altText: 'Mainz logo'},
-  {imageFile: MoenchengladbachLogo, altText: 'Moenchengladbach logo'},
-  {imageFile: NurembergLogo, altText: 'Nuremberg logo'},
-  {imageFile: PaderbornLogo, altText: 'Paderborn logo'},
-  {imageFile: RBLeipzigLogo, altText: 'RB Leipzig logo'},
-  {imageFile: SchalkeLogo, altText: 'Schalke logo'},
-  {imageFile: StuttgartLogo, altText: 'Stuttgart logo'},
+  {imageFile: SchalkeLogo, altText: 'Schalke logo', teamId: 3},
+  {imageFile: HamburgLogo, altText: 'Hamburg logo', teamId: 4},
+  {imageFile: AugsburgLogo, altText: 'Augsburg logo', teamId: 5}, 
+  {imageFile: DusseldorfLogo, altText: 'Dusseldorf logo', teamId: 6},
+  {imageFile: FrankfurtLogo, altText: 'Frankfurt logo', teamId: 7},
+  {imageFile: FreiburgLogo, altText: 'Freiburg logo', teamId: 8},
+  {imageFile: HannoverLogo, altText: 'Hannover logo', teamId: 9},
+  {imageFile: HerthaLogo, altText: 'Hertha logo', teamId: 10},
+  {imageFile: HoffenheimLogo, altText: 'Hoffenheim logo', teamId: 11},
+  {imageFile: KolnLogo, altText: 'Koln logo', teamId: 12},
+  {imageFile: LeverkusenLogo, altText: 'Leverkusen logo', teamId: 13},
+  {imageFile: MainzLogo, altText: 'Mainz logo', teamId: 14},
+  {imageFile: MoenchengladbachLogo, altText: 'Moenchengladbach logo', teamId: 15},
+  {imageFile: NurembergLogo, altText: 'Nuremberg logo', teamId: 16},
+  {imageFile: PaderbornLogo, altText: 'Paderborn logo', teamId: 17},
+  {imageFile: RBLeipzigLogo, altText: 'RB Leipzig logo', teamId: 18},
+  {imageFile: StuttgartLogo, altText: 'Stuttgart logo', teamId: 19},
   {imageFile: UnionBerlinLogo, altText: 'Union Berlin logo'},
   {imageFile: WerderBremenLogo, altText: 'Werder Bremen logo'},
   {imageFile: WolfsburgLogo, altText: 'Wolfsburg logo'},
@@ -56,9 +56,7 @@ const TeamsContainer = () => {
           {teamInfo.map((object, index) => {
             return (
               <>
-              <div 
-              
-              className="teams-container__logo-container">
+              <div className="teams-container__logo-container">
                 <a key={index} href={`http://localhost:3000/team/${object.teamId}`}>
                   <img
                   className="teams-container__logo" 
