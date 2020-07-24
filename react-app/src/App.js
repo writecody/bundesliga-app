@@ -7,7 +7,9 @@ import {
   BrowserRouter as Router,
   Route,
   Link,
+  Switch
 } from "react-router-dom";
+import TeamsContainer from './components/global/teamsContainer/teamsContainer';
 
 
 function App() {
@@ -16,13 +18,17 @@ function App() {
 
       <div className="App">
         
-        <div>
+        {/* <div>
           <Link to="/" className="link">Main Page</Link>
           <Link to="/team" className="link">Team Page</Link>
-        </div>
+        </div> */}
 
         <Route exact path="/" component={MainPage} />
         <Route exact path="/team" component={TeamPage} />
+
+        <Switch>
+          <Route path="/team" component={TeamPage} />
+        </Switch>
 
       </div>
 

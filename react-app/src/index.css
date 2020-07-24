@@ -1,12 +1,11 @@
 body {
   background: no-repeat;
-  background-image: url("./assets/cartoon-soccer-ball-on-field.png");
   background-attachment: fixed;
   font-family: 'Noto Sans JP', sans-serif; }
 
 h1 {
-  background: #0C0904;
-  color: #fffaf0;
+  background: #FFF0F5;
+  color: #0C0904;
   font-family: "Contrail One", cursive;
   letter-spacing: 0.25rem;
   padding: 1rem;

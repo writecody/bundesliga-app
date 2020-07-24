@@ -13,14 +13,14 @@ $header-font:  'Contrail One', cursive;
 // selectors
 body {
   background: no-repeat;
-  background-image: url('./assets/cartoon-soccer-ball-on-field.png');
+  // background-image: url('./assets/cartoon-soccer-ball-on-field.png');
   background-attachment: fixed;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1 {
-  background: $global-black;
-  color: $global-white;
+  background: $global-light-gray;
+  color: $global-black;
   font-family: $header-font;
   letter-spacing: 0.25rem;
   padding: 1rem;

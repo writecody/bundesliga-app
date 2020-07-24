@@ -2,6 +2,8 @@ import React from 'react';
 import '../../index.css';
 import DortmundTeamImage from '../../assets/dortmund-team-image.jpeg';
 import DortmundStadiumExterior from '../../assets/dortmund-stadium-exterior.jpg';
+import { useRouteMatch, Route, Switch } from 'react-router-dom';
+import Team from '../../components/team/team';
 
 const TeamPage = (
   {
@@ -16,6 +18,8 @@ const TeamPage = (
     teamSecondaryColor = 'Yellow'
   }
 ) => {
+
+  let match = useRouteMatch();
 
   const teamHeaderStyle = {
     color: teamPrimaryColor,
@@ -57,6 +61,11 @@ const TeamPage = (
         <p>In 2002, Borussia Dortmund won their third Bundesliga title. Dortmund had a remarkable run at the end of the season to overtake Bayer Leverkusen, securing the title on the final day. Manager Matthias Sammer became the first person in Borussia Dortmund history to win the Bundesliga as both a player and manager. In the same season, Borussia lost the final of the 2001–02 UEFA Cup to Dutch side Feyenoord.
 
         Dortmund's fortunes then steadily declined for a number of years. Poor financial management led to a heavy debt load and the sale of their Westfalenstadion grounds. The situation was compounded by failure to advance in the 2003–04 UEFA Champions League, when the team was eliminated on penalties in the qualifying rounds by Club Brugge. In 2003, Bayern Munich loaned €2 million to Dortmund for several months to pay their payroll. Borussia was again driven to the brink of bankruptcy in 2005, the original €11 value of its shares having plummeted by over 80% on the Frankfurt Stock Exchange.</p>
+
+        <Switch>
+          <Route path={`${match.path}/:teamId`} component={Team}></Route>
+            
+        </Switch>
 
       </main>
     </>
