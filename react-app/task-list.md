@@ -1,5 +1,7 @@
 - [x] Remove nested routing
-- [ ] Add all teams to database
+- [x] Add all teams to database
 - [ ] Add photos to database (including team logos)
-- [ ] On team icon click, icon container flips, shows team name and 'Details' or 'Team Info' link
-- [ ] Dyanmically display team info on /team/< teamname > page
+- [x] Dyanmically display team info on /team/< teamname > page
+- [ ] Add loading state for team page
+- [ ] Add 'Back' icon to team page
+- [ ] Utilize icons on team page for mobile breakpoint

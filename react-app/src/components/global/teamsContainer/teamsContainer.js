@@ -24,9 +24,9 @@ import UnionBerlinLogo from '../../../assets/union-berlin-logo.png';
 import WerderBremenLogo from '../../../assets/werder-bremen-logo.png';
 import WolfsburgLogo from '../../../assets/wolfsburg-logo.png';
 
-const teamLogos = [
-  {imageFile: AugsburgLogo, altText: 'Augsburg logo'}, 
-  {imageFile: BayernLogo, altText: 'Bayern logo'},
+const teamInfo = [
+  {imageFile: AugsburgLogo, altText: 'Augsburg logo', teamId: null}, 
+  {imageFile: BayernLogo, altText: 'Bayern logo', teamId: 2},
   {imageFile: DortmundLogo, altText: 'Dortmund logo'},
   {imageFile: DusseldorfLogo, altText: 'Dusseldorf logo'},
   {imageFile: FrankfurtLogo, altText: 'Frankfurt logo'},
@@ -53,16 +53,19 @@ const TeamsContainer = () => {
   return (
     <>
       <div className="teams-container">
-          {teamLogos.map((object, index) => {
+          {teamInfo.map((object, index) => {
             return (
               <>
-              <div className="teams-container__logo-container">
-                <img 
+              <div 
+              
+              className="teams-container__logo-container">
+                <a key={index} href={`http://localhost:3000/team/${object.teamId}`}>
+                  <img
                   className="teams-container__logo" 
                   key={index} 
                   src={object.imageFile} 
-                  alt={object.altText}>
-                </img>
+                  alt={object.altText} />
+                </a>
               </div>
               </>
             )

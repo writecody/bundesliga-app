@@ -6,10 +6,8 @@ import './index.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from "react-router-dom";
-import TeamsContainer from './components/global/teamsContainer/teamsContainer';
 
 
 function App() {

@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const port = 5000;
-const pool = require('./db/db');
+const pool = require('./db_connection/db');
 
 // middleware
 app.use(cors());
