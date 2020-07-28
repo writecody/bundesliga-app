@@ -3,13 +3,24 @@ import TeamsContainer from '../../components/global/teamsContainer/teamsContaine
 import Header from '../../components/global/header/header';
 import '../../index.css';
 
-
 const MainPage = () => {
+
+  // const createWordmark = () => {
+  //   // const word = 'BUNDESLIGA';
+  //   return [...'BUNDESLIGA'];
+  // }
+
+  const letters = [...'BUNDESLIGA'];
 
   return (
     <>
+      <div className="header">
+        {letters.map((letter, index) => (
+          <h1 key={index} className="header__letter">{letter}</h1>
+        ))}
+      </div>
+
       <main>
-        <Header title={'Teams of the Bundesliga'} />
         <TeamsContainer />
       </main>
     </>

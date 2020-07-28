@@ -1,6 +1,4 @@
 body {
-  background: no-repeat;
-  background-attachment: fixed;
   font-family: 'Noto Sans JP', sans-serif; }
 
 h1 {
@@ -26,12 +24,21 @@ p {
   width: 70%; }
 
 .header {
-  display: flex;
-  font-size: clamp(1rem, 3vw, 3rem);
-  justify-content: center;
-  margin: auto;
-  text-align: center; }
+  box-shadow: 0px 2px 13px 2px;
+  display: flex; }
+  .header__letter {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(1rem, 3vw, 3rem);
+    justify-content: center;
+    margin: auto; }
 
+.team-page__container {
+  background: no-repeat;
+  background-image: url("./assets/cartoon-soccer-ball-on-field.png");
+  background-attachment: fixed;
+  height: 100%;
+  padding: 24px; }
 .team-page__info-container {
   background-image: url("./assets/team-info-container-background.png");
   display: flex;
@@ -63,7 +70,7 @@ p {
 
 .teams-container {
   align-items: center;
-  box-shadow: 0 0.125rem 1rem 0.125rem #0C0904;
+  box-shadow: 0 0.125rem 16px -7px #0C0904;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -74,7 +81,7 @@ p {
     height: 8rem; }
   .teams-container__logo-container {
     align-items: center;
-    background: #fffaf0;
+    background: darkgray;
     box-shadow: 0 0.125rem 0.25rem #0C0904;
     display: flex;
     justify-content: center;

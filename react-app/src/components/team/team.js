@@ -27,27 +27,22 @@ function Team() {
 
   return (
     <>
-      <main className="team-page__info-container">
+    <div className="team-page__container">
+        <main className="team-page__info-container">
+        {/* <div className="team-page__horizontal-bar" /> */}
 
-      <div className="team-page__horizontal-bar" />
+        <h2 style={teamHeaderStyle}>{teamData.name}</h2>
+        <p>{teamData.summary}</p>
 
-      <h2 style={teamHeaderStyle}>{teamData.name}</h2>
+        <h3 style={teamHeaderStyle}>Stadium and Location</h3>
+        <p className="team-page__photo-caption">{teamData.stadium} at {teamData.location}</p>
 
-      <p>{teamData.summary}</p>
+        <h3 style={teamHeaderStyle}>About the Team</h3>
+        <p>Mascot: {teamData.mascot}</p>
+        <p>{teamData.biography}</p>
 
-      <h3 style={teamHeaderStyle}>Stadium and Location</h3>
-
-      <p className="team-page__photo-caption">{teamData.stadium} at {teamData.location}</p>
-
-      <h3 style={teamHeaderStyle}>About the Team</h3>
-
-      <p>Mascot: {teamData.mascot}</p>
-
-      <p>{teamData.biography}</p>
-
-      </main>
-
-      <i className="fa fa-map-signs"></i>
+        </main>
+      </div>
     </>
   )
 }
