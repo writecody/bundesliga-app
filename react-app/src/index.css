@@ -24,23 +24,27 @@ p {
   width: 70%; }
 
 .header {
-  box-shadow: 0px 2px 13px 2px;
+  box-shadow: 0px 2px 4px 1px darkgray;
   display: flex; }
   .header__letter {
+    border-radius: 2px;
     display: flex;
     flex-direction: row;
     font-size: clamp(1rem, 3vw, 3rem);
     justify-content: center;
     margin: auto; }
+    .header__letter:hover {
+      box-shadow: inset 0px 4px 6px -1px black;
+      transition-property: box-shadow;
+      transition-duration: 50ms; }
 
 .team-page__container {
   background: no-repeat;
-  background-image: url("./assets/cartoon-soccer-ball-on-field.png");
   background-attachment: fixed;
-  height: 100%;
-  padding: 24px; }
+  object-fit: cover;
+  height: 100%; }
 .team-page__info-container {
-  background-image: url("./assets/team-info-container-background.png");
+  background: white;
   display: flex;
   flex-direction: column;
   margin: 1rem auto;

@@ -27,9 +27,10 @@ function Team() {
 
   return (
     <>
+    <div className="teams-container">
+
     <div className="team-page__container">
         <main className="team-page__info-container">
-        {/* <div className="team-page__horizontal-bar" /> */}
 
         <h2 style={teamHeaderStyle}>{teamData.name}</h2>
         <p>{teamData.summary}</p>
@@ -43,6 +44,8 @@ function Team() {
 
         </main>
       </div>
+    </div>
+
     </>
   )
 }
