@@ -21,34 +21,36 @@ function Team() {
   const teamHeaderStyle = {
     color: teamData.primary_color,
     fontFamily: 'Contrail One',
-    letterSpacing: '0.25rem',
-    margin: '1rem auto',
+    fontSize: 'clamp(16px, 3.5vw, 48px)',
+    margin: '0 auto',
     textAlign: 'center',
-    textShadow: `0 0.0625rem 0.0625rem ${teamData.secondary_color}`
+    textShadow: `2px 0px 1px ${teamData.secondary_color}`
+    
   }
 
   return (
     <>
-    <div className="teams-container">
+      <div className="team-page">
 
-    <div className="team-page__sidebar">
-        <img src={teamInfo[teamId].imageFile} alt="team-logo" />
-    </div>
-        {/* <main className="team-page__info-container">
+        <div className="team-page__sidebar">
+            <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
 
-        <h2 style={teamHeaderStyle}>{teamData.name}</h2>
-        <p>{teamData.summary}</p>
+            <h2 style={teamHeaderStyle}>{teamData.name}</h2>
+        </div>
+          {/* <p>{teamData.summary}</p> */}
+          {/* <main className="team-page__info-container">
 
-        <h3 style={teamHeaderStyle}>Stadium and Location</h3>
-        <p className="team-page__photo-caption">{teamData.stadium} at {teamData.location}</p>
+          
 
-        <h3 style={teamHeaderStyle}>About the Team</h3>
-        <p>Mascot: {teamData.mascot}</p>
-        <p>{teamData.biography}</p>
+          <h3 style={teamHeaderStyle}>Stadium and Location</h3>
+          <p className="team-page__photo-caption">{teamData.stadium} at {teamData.location}</p>
 
-        </main> */}
-    </div>
+          <h3 style={teamHeaderStyle}>About the Team</h3>
+          <p>Mascot: {teamData.mascot}</p>
+          <p>{teamData.biography}</p>
 
+          </main> */}
+      </div>
     </>
   )
 }

@@ -20,6 +20,7 @@ h3 {
   width: 48px; }
 
 p {
+  hyphens: auto;
   margin: 0 auto 1rem;
   width: 70%; }
 
@@ -39,39 +40,40 @@ p {
       transition-property: box-shadow;
       transition-duration: 50ms; }
 
-.team-page__container {
-  background: no-repeat;
-  background-attachment: fixed;
-  object-fit: cover;
-  height: 100%; }
-.team-page__info-container {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 80%; }
-.team-page__horizontal-bar {
-  background: #0C0904;
-  height: 2rem; }
-.team-page__photo {
-  box-shadow: 0 0.125rem 0.25rem #fffaf0;
-  margin: auto;
-  width: 70%; }
-.team-page__photo-caption {
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  width: 70%;
-  margin: 1rem auto; }
-.team-page__stadium-image {
-  box-shadow: 0 0.125rem 0.25rem #0C0904;
-  margin: auto;
-  width: 70%; }
-.team-page__stadium-name {
-  font-size: 1.5rem; }
-.team-page__team-summary {
-  margin: 1rem auto; }
+.team-page {
+  margin: 0; }
+  .team-page__sidebar {
+    align-content: flex-start;
+    align-items: flex-start;
+    border-radius: 2px;
+    box-shadow: inset 0px 4px 6px -1px #656769;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    width: 22%; }
+    .team-page__sidebar img {
+      margin: 32px 0;
+      object-fit: cover;
+      width: 200px; }
+  .team-page__photo {
+    box-shadow: 0 0.125rem 0.25rem #fffaf0;
+    margin: auto;
+    width: 70%; }
+  .team-page__photo-caption {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    width: 70%;
+    margin: 1rem auto; }
+  .team-page__stadium-image {
+    box-shadow: 0 0.125rem 0.25rem #0C0904;
+    margin: auto;
+    width: 70%; }
+  .team-page__stadium-name {
+    font-size: 1.5rem; }
+  .team-page__team-summary {
+    margin: 1rem auto; }
 
 .teams-container {
   align-items: center;

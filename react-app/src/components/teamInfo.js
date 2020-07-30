@@ -41,7 +41,7 @@ export const teamInfo = [
   {imageFile: PaderbornLogo, altText: 'Paderborn logo', teamId: 17},
   {imageFile: RBLeipzigLogo, altText: 'RB Leipzig logo', teamId: 18},
   {imageFile: StuttgartLogo, altText: 'Stuttgart logo', teamId: 19},
-  {imageFile: UnionBerlinLogo, altText: 'Union Berlin logo'},
-  {imageFile: WerderBremenLogo, altText: 'Werder Bremen logo'},
-  {imageFile: WolfsburgLogo, altText: 'Wolfsburg logo'},
+  {imageFile: UnionBerlinLogo, altText: 'Union Berlin logo', teamId: 20},
+  {imageFile: WerderBremenLogo, altText: 'Werder Bremen logo', teamId: 21},
+  {imageFile: WolfsburgLogo, altText: 'Wolfsburg logo', teamId: 22},
 ];

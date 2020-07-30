@@ -38,6 +38,7 @@ h3 {
 }
 
 p {
+  hyphens: auto;
   margin: 0 auto 1rem;
   width: 70%;
 }
@@ -61,30 +62,48 @@ p {
       transition-duration: 50ms;
     }
   }
-
 }
 
 .team-page {
-  &__container {
-    background: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
-    height: 100%;
-  }
+  margin: 0;
 
-  &__info-container {
-    background: white;
+  &__sidebar {
+    align-content: flex-start;
+    align-items: flex-start;
+    border-radius: 2px;
+    box-shadow: inset 0px 4px 6px -1px $global-medium-gray;
     display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    padding: 1rem;
-    width: 80%;
-  }
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    width: 22%;
 
-  &__horizontal-bar {
-    background: $global-black;
-    height: 2rem;
+    & img {
+      margin: 32px 0;
+      object-fit: cover;
+      width: 200px;
+    }
   }
+  // &__container {
+  //   background: no-repeat;
+  //   background-attachment: fixed;
+  //   object-fit: cover;
+  //   height: 100%;
+  // }
+
+  // &__info-container {
+  //   background: white;
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin: 1rem auto;
+  //   padding: 1rem;
+  //   width: 80%;
+  // }
+
+  // &__horizontal-bar {
+  //   background: $global-black;
+  //   height: 2rem;
+  // }
 
   &__photo {
     box-shadow: 0 0.125rem 0.25rem $global-white;

@@ -3,8 +3,6 @@ import React from 'react';
 import '../../../index.css';
 import {teamInfo} from '../../teamInfo.js';
 
-
-
 const TeamsContainer = () => {
   return (
     <>
