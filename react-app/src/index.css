@@ -32,7 +32,8 @@ p {
     flex-direction: row;
     font-size: clamp(1rem, 3vw, 3rem);
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    transition: 500ms; }
     .header__letter:hover {
       box-shadow: inset 0px 4px 6px -1px black;
       transition-property: box-shadow;

@@ -53,6 +53,7 @@ p {
     font-size: clamp(1rem, 3vw, 3rem);
     justify-content: center;
     margin: auto;
+    transition: 500ms;
 
     &:hover {
       box-shadow: inset 0px 4px 6px -1px black;
@@ -66,7 +67,6 @@ p {
 .team-page {
   &__container {
     background: no-repeat;
-    // background-image: url('./assets/cartoon-soccer-ball-on-field.png');
     background-attachment: fixed;
     object-fit: cover;
     height: 100%;
