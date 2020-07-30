@@ -1,6 +1,8 @@
 import React, { useEffect, useState }from 'react';
 import {useParams} from 'react-router-dom';
 
+import {teamInfo} from '../teamInfo';
+
 function Team() {
   let { teamId } = useParams();
 
@@ -29,8 +31,10 @@ function Team() {
     <>
     <div className="teams-container">
 
-    <div className="team-page__container">
-        <main className="team-page__info-container">
+    <div className="team-page__sidebar">
+        <img src={teamInfo[teamId].imageFile} alt="team-logo" />
+    </div>
+        {/* <main className="team-page__info-container">
 
         <h2 style={teamHeaderStyle}>{teamData.name}</h2>
         <p>{teamData.summary}</p>
@@ -42,8 +46,7 @@ function Team() {
         <p>Mascot: {teamData.mascot}</p>
         <p>{teamData.biography}</p>
 
-        </main>
-      </div>
+        </main> */}
     </div>
 
     </>
