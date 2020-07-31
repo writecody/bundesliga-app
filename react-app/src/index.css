@@ -43,19 +43,20 @@ p {
 .team-page {
   margin: 0; }
   .team-page__sidebar {
-    align-content: flex-start;
-    align-items: flex-start;
     border-radius: 2px;
-    box-shadow: inset 0px 4px 6px -1px #656769;
-    display: flex;
-    flex-wrap: wrap;
+    box-shadow: inset -1px 4px 6px -1px #656769;
     height: 100vh;
     justify-content: center;
-    width: 22%; }
+    padding: 16px;
+    text-align: center;
+    width: 33%; }
+    .team-page__sidebar h2 {
+      font-size: clamp(16px, 5vw, 48px);
+      overflow-wrap: break-word; }
     .team-page__sidebar img {
       margin: 32px 0;
       object-fit: cover;
-      width: 200px; }
+      max-width: 150px; }
   .team-page__photo {
     box-shadow: 0 0.125rem 0.25rem #fffaf0;
     margin: auto;
@@ -103,5 +104,15 @@ p {
       transform: scale(0.95, 0.95);
       transition-property: transform;
       transition-duration: 150ms; }
+
+@media (max-width: 600px) {
+  .team-page__sidebar {
+    box-shadow: inset 0px 4px 5px 1px #656769;
+    height: auto;
+    margin: auto;
+    width: 90%; }
+    .team-page__sidebar h2 {
+      font-size: 40px;
+      margin: -24px 0 0; } }
 
 /*# sourceMappingURL=index.css.map */

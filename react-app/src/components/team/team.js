@@ -35,7 +35,9 @@ function Team() {
         <div className="team-page__sidebar">
             <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
 
-            <h2 style={teamHeaderStyle}>{teamData.name}</h2>
+            <h2 style={{color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`}}>
+              {teamData.name}
+            </h2>
         </div>
           {/* <p>{teamData.summary}</p> */}
           {/* <main className="team-page__info-container">
