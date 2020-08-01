@@ -18,40 +18,36 @@ function Team() {
     fetchData();
   }, [teamId]);
   
-  const teamHeaderStyle = {
-    color: teamData.primary_color,
-    fontFamily: 'Contrail One',
-    fontSize: 'clamp(16px, 3.5vw, 48px)',
-    margin: '0 auto',
-    textAlign: 'center',
-    textShadow: `2px 0px 1px ${teamData.secondary_color}`
-    
-  }
-
   return (
     <>
       <div className="team-page">
 
-        <div className="team-page__sidebar">
-            <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
-
-            <h2 style={{color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`}}>
-              {teamData.name}
-            </h2>
+        <div className="team-page__summary">
+          ADD HEADER AWNING
+          <h2 style={{ color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`, letterSpacing: `1px`, textTransform: 'capitalize' }}>
+            {teamData.name}
+          </h2>
+          <p>{teamData.summary}</p>
         </div>
-          {/* <p>{teamData.summary}</p> */}
-          {/* <main className="team-page__info-container">
+            
+        <div className="team-page__main">
+          <div className="team-page__main__team-image">
+            <img src="../../../assets/maxresdefault.jpg" alt="team image"/>
+            <p>Mascot: {teamData.mascot}</p>
+          </div>
 
-          
+          <div className="team-page__main__logo">
+            <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
+          </div>
+        
+          <div className="team-page__main__geography">
+            <h3 >Stadium and Location</h3>
+            STADIUM PHOTO
+            {teamData.stadium} at {teamData.location} 
+            MAPBOX MAP
+          </div>
+        </div>    
 
-          <h3 style={teamHeaderStyle}>Stadium and Location</h3>
-          <p className="team-page__photo-caption">{teamData.stadium} at {teamData.location}</p>
-
-          <h3 style={teamHeaderStyle}>About the Team</h3>
-          <p>Mascot: {teamData.mascot}</p>
-          <p>{teamData.biography}</p>
-
-          </main> */}
       </div>
     </>
   )
