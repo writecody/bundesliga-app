@@ -16,11 +16,6 @@ h2 {
 h3 {
   font-size: 2rem; }
 
-p {
-  hyphens: auto;
-  margin: 0 auto 1rem;
-  width: 70%; }
-
 .header {
   box-shadow: 0px 2px 4px 1px darkgray;
   display: flex; }
@@ -66,8 +61,6 @@ p {
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3; }
-      .team-page__main__logo img {
-        width: 50%; }
     .team-page__main__team-image {
       border: 1px solid blue;
       grid-column-start: 1;
@@ -86,6 +79,13 @@ p {
     grid-row-end: 3;
     padding: 16px;
     width: auto; }
+    .team-page__summary__awning {
+      text-align: center;
+      border-top: 2px solid #EA324E;
+      border-bottom: 2px solid #EA324E; }
+      .team-page__summary__awning p {
+        font-size: 24px;
+        margin: 0; }
     .team-page__summary h2 {
       font-size: clamp(16px, 5vw, 48px);
       overflow-wrap: break-word; }

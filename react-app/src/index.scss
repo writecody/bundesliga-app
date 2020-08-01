@@ -33,12 +33,6 @@ h3 {
   font-size: 2rem;
 }
 
-p {
-  hyphens: auto;
-  margin: 0 auto 1rem;
-  width: 70%;
-}
-
 // custom selectors
 .header {
   box-shadow: 0px 2px 4px 1px darkgray;
@@ -60,8 +54,6 @@ p {
     }
   }
 }
-
-
 
 .team-page {
   display: grid;
@@ -101,9 +93,9 @@ p {
       grid-row-start: 2;
       grid-row-end: 3;
   
-      & img {
-        width: 50%;
-      }
+      // & img {
+        
+      // }
     }
   
     &__team-image {
@@ -129,6 +121,17 @@ p {
     grid-row-end: 3;
     padding: 16px;
     width: auto;
+
+    &__awning {
+      text-align: center;
+      border-top: 2px solid $global-hot-pink;
+      border-bottom: 2px solid $global-hot-pink;
+      
+      & p {
+        font-size: 24px;
+        margin: 0;
+      }
+    }
 
     & h2 {
       font-size: clamp(16px, 5vw, 48px);

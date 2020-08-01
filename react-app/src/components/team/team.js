@@ -23,16 +23,17 @@ function Team() {
       <div className="team-page">
 
         <div className="team-page__summary">
-          ADD HEADER AWNING
-          <h2 style={{ color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`, letterSpacing: `1px`, textTransform: 'capitalize' }}>
-            {teamData.name}
-          </h2>
+          <div className="team-page__summary__awning">
+            <p style={{ color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`, letterSpacing: `1px` }}>
+              {teamData.name}
+            </p>
+          </div>
           <p>{teamData.summary}</p>
         </div>
             
         <div className="team-page__main">
           <div className="team-page__main__team-image">
-            <img src="../../../assets/maxresdefault.jpg" alt="team image"/>
+            <img src="../../../assets/maxresdefault.jpg" alt="team image" />
             <p>Mascot: {teamData.mascot}</p>
           </div>
 
