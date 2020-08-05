@@ -22,32 +22,22 @@ function Team() {
     <>
       <div className="team-page">
 
-        <div className="team-page__summary">
-          <div className="team-page__summary__awning">
-            <p style={{ color: `${teamData.primary_color}`, textShadow: `1px 0 1px ${teamData.secondary_color}`, letterSpacing: `1px` }}>
-              {teamData.name}
-            </p>
-          </div>
-          <p>{teamData.summary}</p>
+        <div className="team-page__header">
+          <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
+          <h1 
+            style={{color: `${teamData.primary_color}`, padding: '0', textShadow: `-3px 3px ${teamData.secondary_color}`, width: '100%'}} 
+            className="team-page__name">
+              {teamData.name}</h1>
         </div>
-            
-        <div className="team-page__main">
-          <div className="team-page__main__team-image">
-            <img src="../../../assets/maxresdefault.jpg" alt="team image" />
-            <p>Mascot: {teamData.mascot}</p>
-          </div>
 
-          <div className="team-page__main__logo">
-            <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
-          </div>
-        
-          <div className="team-page__main__geography">
-            <h3 >Stadium and Location</h3>
-            STADIUM PHOTO
-            {teamData.stadium} at {teamData.location} 
-            MAPBOX MAP
-          </div>
-        </div>    
+
+        <img className="team-page__team-image" src={teamData.team_image} alt="team logo" />
+        <h2 className="team-page__nickname">{teamData.nickname}</h2>
+
+       
+        <img className="team-page__stadium-image" src={teamData.stadium_image} alt={`${teamData.name}'s stadium`}/>
+        <h2 className="team_page__stadium-caption">{teamData.stadium_name} at {teamData.location} </h2>
+
 
       </div>
     </>

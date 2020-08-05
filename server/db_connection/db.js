@@ -6,7 +6,7 @@ const pool = new Pool({
   password: loginCredential,
   host: 'localhost',
   port: 5432,
-  database: 'bundesliga'
+  database: 'postgres'
 });
 
 const client = new Client({
@@ -14,7 +14,7 @@ const client = new Client({
   password: loginCredential,
   host: 'localhost',
   port: 5432,
-  database: 'bundesliga'
+  database: 'postgres'
 });
 client.connect();
 

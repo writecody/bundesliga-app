@@ -56,87 +56,31 @@ h3 {
 }
 
 .team-page {
-  display: grid;
-  margin: 0;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  &__main {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  
-    &__geography {
-      border: 1px solid orange;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
-  
-      // &__map {
-      //   width: 100%;
-      // }
-    }
-  
-    &__logo {
-      align-items: center;
-      align-content: center;
-      border: 1px solid red;
-      display: flex;
-      justify-content: center;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
-  
-      // & img {
-        
-      // }
-    }
-  
-    &__team-image {
-      border: 1px solid blue;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      width: 100%;
-  
-      & img {
-        object-fit: cover;
-      }
+  &__header {
+    & img {
+      object-fit: cover;
+      width: 15rem;
     }
   }
 
-  &__summary {
-    border-radius: 2px;
-    box-shadow: inset -1px 4px 6px 2px $global-medium-gray;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 16px;
-    width: auto;
+  &__team-image {
+    box-shadow: 0px 2px 4px 2px gray;
+    object-fit: cover;
+    width: 100%;
+  }
 
-    &__awning {
-      text-align: center;
-      border-top: 2px solid $global-hot-pink;
-      border-bottom: 2px solid $global-hot-pink;
-      
-      & p {
-        font-size: 24px;
-        margin: 0;
-      }
-    }
-
-    & h2 {
-      font-size: clamp(16px, 5vw, 48px);
-      overflow-wrap: break-word;
-    }
+  &__stadium-image {
+    box-shadow: 0px 2px 4px 2px gray;
+    object-fit: cover;
+    width: 100%;
   }
 
 }
@@ -178,6 +122,3 @@ h3 {
     }
   }
 }
-
-// media queries
-// with different column widths

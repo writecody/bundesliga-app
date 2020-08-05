@@ -1,3 +1,3 @@
-const loginCredential = 'thetaoistheway4688';
+const loginCredential = 'mizzourah1.';
 
 module.exports = loginCredential;

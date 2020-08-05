@@ -24,7 +24,7 @@ app.get('/teams', async (req, res) => {
 app.get('/teams/:id', async (req, res) => {
   try {
     const {id} = req.params;
-    const team = await pool.query('SELECT * FROM team WHERE team_id = $1', [id]);
+    const team = await pool.query('SELECT * FROM team WHERE id = $1', [id]);
     res.json(team.rows[0]);
   } catch (error) {
     console.error(error.message);
