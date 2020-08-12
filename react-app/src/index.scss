@@ -25,12 +25,11 @@ h1 {
   width: 70%;
 }
 
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
+caption {
+  color: $global-medium-gray;
+  font-family: $header-font;
+  letter-spacing: 0.075rem;
+  margin: 0.5rem 0;
 }
 
 // custom selectors
@@ -56,13 +55,13 @@ h3 {
 }
 
 .team-page {
-  display: flex;
-  margin: 1rem auto;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
   text-align: center;
+  width: 90%;
 
   &__header {
     & img {
@@ -71,13 +70,7 @@ h3 {
     }
   }
 
-  &__team-image {
-    box-shadow: 0px 2px 4px 2px gray;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  &__stadium-image {
+  &__image {
     box-shadow: 0px 2px 4px 2px gray;
     object-fit: cover;
     width: 100%;

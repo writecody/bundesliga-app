@@ -10,11 +10,11 @@ h1 {
   text-shadow: -3px 3px #EA324E;
   width: 70%; }
 
-h2 {
-  font-size: 3rem; }
-
-h3 {
-  font-size: 2rem; }
+caption {
+  color: #656769;
+  font-family: "Contrail One", cursive;
+  letter-spacing: 0.075rem;
+  margin: 0.5rem 0; }
 
 .header {
   box-shadow: 0px 2px 4px 1px darkgray;
@@ -33,21 +33,17 @@ h3 {
       transition-duration: 50ms; }
 
 .team-page {
-  display: flex;
-  margin: 1rem auto;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
   align-items: center;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  text-align: center;
+  width: 90%; }
   .team-page__header img {
     object-fit: cover;
     width: 15rem; }
-  .team-page__team-image {
-    box-shadow: 0px 2px 4px 2px gray;
-    object-fit: cover;
-    width: 100%; }
-  .team-page__stadium-image {
+  .team-page__image {
     box-shadow: 0px 2px 4px 2px gray;
     object-fit: cover;
     width: 100%; }

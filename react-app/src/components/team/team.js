@@ -19,8 +19,9 @@ function Team() {
   }, [teamId]);
   
   return (
+
     <>
-      <div className="team-page">
+      <div id="team-page-container" className="team-page">
 
         <div className="team-page__header">
           <img src={teamInfo[teamId - 1].imageFile} alt="team logo" />
@@ -30,14 +31,19 @@ function Team() {
               {teamData.name}</h1>
         </div>
 
-
-        <img className="team-page__team-image" src={teamData.team_image} alt="team logo" />
-        <h2 className="team-page__nickname">{teamData.nickname}</h2>
+        <img className="team-page__image" src={teamData.team_image} alt="team logo" />
+        <caption className="team-page__nickname">{teamData.nickname}</caption>
 
        
-        <img className="team-page__stadium-image" src={teamData.stadium_image} alt={`${teamData.name}'s stadium`}/>
-        <h2 className="team_page__stadium-caption">{teamData.stadium_name} at {teamData.location} </h2>
+        <img className="team-page__image" src={teamData.stadium_image} alt={`${teamData.name}'s stadium`}/>
+        <caption>{teamData.stadium_name} at {teamData.location} </caption>
+        
+        MAPBOX MAP
 
+        CURRENT WEATHER - API
+        Wikipedia article for this place - open in new tab
+
+        The team's official site URL
 
       </div>
     </>
