@@ -4,4 +4,4 @@
 - [x] Dyanmically display team info on /team/< teamname > page
 - [ ] Add loading state for team page
 - [x] Add 'Back' icon to team page
-- [ ] Convert to PWA
+- [ ] Convert to PWA - https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli
