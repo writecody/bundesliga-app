@@ -8,7 +8,7 @@ const pool = require('./db_connection/db');
 app.use(cors());
 app.use(express.json());
 
-// routes
+// ROUTES
 
 // get all teams
 app.get('/teams', async (req, res) => {
