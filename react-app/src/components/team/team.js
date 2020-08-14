@@ -1,9 +1,9 @@
-import React, { useEffect, useState }from 'react';
+import React, { useEffect, useState, useRef }from 'react';
 import { useParams } from 'react-router-dom';
+
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 
 import { teamInfo } from '../teamInfo';
-import { baseUrl } from '../../js/front-end-config';
 
 function Team() {
   let { teamId } = useParams();
@@ -11,9 +11,10 @@ function Team() {
   const [teamData, setTeamData] = useState({ teamData: {} });
 
   const Map = ReactMapboxGl({
-    accessToken: 'pk.eyJ1Ijoid3JpdGVjb2R5IiwiYSI6ImNrZDYyYmJ6YzBoMTAzMnBnODVmY25kbWIifQ.IC0KnU9aLcJRGCGUe18j8g'
+    accessToken:
+      process.env.REACT_APP_MAPBOX_KEY
   });
-  
+
   useEffect(() => {
     const fetchData = async () => {
       await fetch(`http://localhost:5000/teams/${teamId}`)
@@ -23,10 +24,10 @@ function Team() {
 
     fetchData();
   }, [teamId]);
-  
+
   return (
     <>
-      <a href={baseUrl}><i className="fa fa-arrow-left"></i></a>
+      <a href="http://localhost:3000"><i className="fa fa-arrow-left"></i></a>
       
       <div id="team-page-container" className="team-page">
 
@@ -40,22 +41,24 @@ function Team() {
         </div>
 
         <img className="team-page__image" src={teamData.team_image} alt="team logo" />
-        <caption style={{color: `${teamData.primary_color}`, textShadow: `-1px 0px ${teamData.secondary_color}`}} className="team-page__nickname">{teamData.nickname}</caption>
+        <h2 style={{color: `${teamData.primary_color}`, textShadow: `-1px 0px ${teamData.secondary_color}`}} className="team-page__caption">{teamData.nickname}</h2>
 
         <img className="team-page__image" src={teamData.stadium_image} alt={`${teamData.name}'s stadium`}/>
-        <caption style={{color: `${teamData.primary_color}`, textShadow: `-1px 0px ${teamData.secondary_color}`}}>{teamData.stadium_name} at {teamData.location} </caption>
+        <h2 style={{color: `${teamData.primary_color}`, textShadow: `-1px 0px ${teamData.secondary_color}`}} className="team-page__caption">{teamData.stadium_name} at {teamData.location}</h2>
         
-        <Map
-          style="mapbox://styles/mapbox/streets-v9"
-          containerStyle={{
-            height: '60vh',
-            width: '100%'
-          }}
-        >
-          <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15'}}>
-            <Feature coordinates={[-0.481, 51.32]} />
-          </Layer>
-        </Map>
+        <div className="team-page__location-info">
+          <Map
+            style="mapbox://styles/mapbox/streets-v9"
+            containerStyle={{
+              height: '100vh',
+              width: '100vw'
+            }}
+          >
+            <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
+              <Feature coordinates={[-0.481747846041145, 88.3233379650232]} />
+            </Layer>
+          </Map>
+        </div>
 
         CURRENT WEATHER - API
 

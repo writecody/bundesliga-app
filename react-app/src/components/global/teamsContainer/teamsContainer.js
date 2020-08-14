@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../../../index.css';
-import {teamInfo} from '../../teamInfo.js';
+import {teamInfo} from '../../teamInfo';
 
 const TeamsContainer = () => {
   return (
