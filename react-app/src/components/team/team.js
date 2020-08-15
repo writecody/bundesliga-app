@@ -1,20 +1,14 @@
-import React, { useEffect, useState, useRef }from 'react';
+import React, { useEffect, useRef, useState }from 'react';
 import { useParams } from 'react-router-dom';
 
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
-
 import { teamInfo } from '../teamInfo';
+import MapboxGLMap from '../MapboxGLMap/MapboxGLMap';
 
 function Team() {
   let { teamId } = useParams();
 
   const [teamData, setTeamData] = useState({ teamData: {} });
-
-  const Map = ReactMapboxGl({
-    accessToken:
-      process.env.REACT_APP_MAPBOX_KEY
-  });
-
+  
   useEffect(() => {
     const fetchData = async () => {
       await fetch(`http://localhost:5000/teams/${teamId}`)
@@ -45,23 +39,9 @@ function Team() {
 
         <img className="team-page__image" src={teamData.stadium_image} alt={`${teamData.name}'s stadium`}/>
         <h2 style={{color: `${teamData.primary_color}`, textShadow: `-1px 0px ${teamData.secondary_color}`}} className="team-page__caption">{teamData.stadium_name} at {teamData.location}</h2>
-        
-        <div className="team-page__location-info">
-          <Map
-            style="mapbox://styles/mapbox/streets-v9"
-            containerStyle={{
-              height: '100vh',
-              width: '100vw'
-            }}
-          >
-            <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-              <Feature coordinates={[-0.481747846041145, 88.3233379650232]} />
-            </Layer>
-          </Map>
-        </div>
 
-        CURRENT WEATHER - API
 
+        <MapboxGLMap />
       </div>
     </>
   )
