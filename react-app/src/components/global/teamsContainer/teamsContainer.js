@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import '../../../index.css';
 import {teamInfo} from '../../teamInfo';
+
+import MapboxGLMap from '../../MapboxGLMap/MapboxGLMap';
 
 const TeamsContainer = () => {
   return (
@@ -21,6 +23,9 @@ const TeamsContainer = () => {
               </>
             )
           })}
+      </div>
+      <div>
+        <MapboxGLMap />
       </div>
     </>
   )

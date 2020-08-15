@@ -45,3 +45,7 @@ export const teamInfo = [
   {imageFile: WerderBremenLogo, altText: 'Werder Bremen logo', teamId: 21},
   {imageFile: WolfsburgLogo, altText: 'Wolfsburg logo', teamId: 22},
 ];
+
+export const teamLocations = [
+  
+];

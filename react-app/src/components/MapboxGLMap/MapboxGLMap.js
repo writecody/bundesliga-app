@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 
 const styles = {
-  width: "100%",
   height: "30rem",
+  margin: '1rem auto 2rem',
+  objectFit: 'cover',
+  width: "100%",
 };
 
 const MapboxGLMap = () => {
@@ -16,8 +18,8 @@ const MapboxGLMap = () => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
         style: 'mapbox://styles/writecody/ckdtn6jq80cu919pe9j9zfnd4',
-        center: [7,51],
-        zoom: 5
+        center: [10.4234469, 51.0834196],
+        zoom: 4.75
       });
 
       map.on("load", () => {

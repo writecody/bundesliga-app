@@ -5,3 +5,4 @@
 - [ ] Add loading state for team page
 - [x] Add 'Back' icon to team page
 - [ ] Convert to PWA - https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli
+- [ ] Add Mapbox map with marker for each team location
