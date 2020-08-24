@@ -1,5 +1,4 @@
 import React from 'react';
-
 import '../../../index.css';
 import { teamInfo } from '../../teamInfo';
 
@@ -24,8 +23,11 @@ const TeamsContainer = () => {
             )
           })}
       </div>
-      <div id="map">
-        <MapboxGLMap />
+      <div className="info-container">
+        <div id="map" className="info-container__section">
+          <MapboxGLMap />
+        </div>
+
       </div>
     </>
   )

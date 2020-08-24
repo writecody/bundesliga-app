@@ -31,15 +31,21 @@ i {
 }
 
 // custom selectors
+.mapboxgl-ctrl, .mapboxgl-ctrl-attrib,.mapboxgl-compact {
+  display: none;
+}
+
 .header {
+  align-items: stretch;
   box-shadow: 0px 2px 4px 1px darkgray;
   display: flex;
+  overflow: hidden;
 
   &__letter {
     border-radius: 2px;
     display: flex;
     flex-direction: row;
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     justify-content: center;
     margin: auto;
     transition: 500ms;
@@ -52,19 +58,27 @@ i {
   }
 }
 
+.info-container {
+  box-shadow: 0 0.125rem 16px -7px #0C0904;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  text-align: center;
+}
+
 .mapboxgl-ctrl-attrib-inner {
   display: none;
 }
 
-#map {
+.info-container__section {
   align-items: center;
-  box-shadow: 0 0.125rem 16px -7px #0C0904;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 1rem;
+  margin: 0;
   padding: 1rem;
-  width: 90%;
+  width: 45%;
 }
 
 .team-page {
@@ -132,6 +146,16 @@ i {
       transform: scale(.95, .95);
       transition-property: transform;
       transition-duration: 150ms;
+    }
+  }
+}
+
+@media(max-width:400px) {
+  .info-container {
+    margin: 0 auto;
+    
+    &__section {
+      width: 100%;
     }
   }
 }
