@@ -24,7 +24,7 @@ const TeamsContainer = () => {
             )
           })}
       </div>
-      <div>
+      <div id="map">
         <MapboxGLMap />
       </div>
     </>

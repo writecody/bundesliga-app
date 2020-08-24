@@ -22,6 +22,10 @@ const MapboxGLMap = () => {
         zoom: 4.75
       });
 
+      const marker1 = new mapboxgl.Marker()
+        .setLngLat([10, 51])
+        .addTo(map);
+
       map.on("load", () => {
         setMap(map);
         map.resize();
@@ -32,7 +36,6 @@ const MapboxGLMap = () => {
   }, [map]);
 
   return <div ref={el => (mapContainer.current = el)} style={styles} />
-
 };
 
 export default MapboxGLMap;
