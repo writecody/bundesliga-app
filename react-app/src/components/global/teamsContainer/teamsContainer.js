@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import '../../../index.css';
-import {teamInfo} from '../../teamInfo';
+import { teamInfo } from '../../teamInfo';
 
 import MapboxGLMap from '../../MapboxGLMap/MapboxGLMap';
 
