@@ -30,6 +30,11 @@ i {
   margin-left: 0.5rem;
 }
 
+p {
+  color: $global-medium-gray;
+  margin: 0 auto 1rem;
+}
+
 // custom selectors
 .mapboxgl-ctrl, .mapboxgl-ctrl-attrib,.mapboxgl-compact {
   display: none;
@@ -44,7 +49,7 @@ i {
     border-radius: 2px;
     display: flex;
     flex-direction: row;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     justify-content: center;
     margin: auto;
     transition: 500ms;
@@ -79,6 +84,35 @@ i {
   margin: 0;
   padding: 1rem 0 0 2rem;
   width: 45%;
+
+  &__link {
+    box-shadow: 0px 0px 3px #CBB77E;
+    color: #CBB77E;
+    font-family: "Contrail One",cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.075rem;
+    margin: 0.75rem 0 0.5rem 0;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-shadow: -1px 0px #0C0904;
+    width: 80%;
+
+    &:hover {
+      box-shadow: 0px 0px 6px 1px $global-gold;
+      transition-property: box-shadow;
+      transition-duration: 50ms;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 6px 2px $global-hot-pink;
+      transition-property: box-shadow;
+      transition-duration: 50ms;
+    }
+
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .team-page {
@@ -160,7 +194,7 @@ i {
     width: 100%;
     
     &__section {
-      padding: 1rem;
+      padding: 0 1rem;
       width: 100%;
     }
   }
