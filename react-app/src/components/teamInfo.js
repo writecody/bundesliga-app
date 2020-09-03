@@ -1,29 +1,90 @@
 import AugsburgLogo from '../assets/augsburg-logo.png';
-import AugsburgStadiumImage from '../assets/id-5-team-photo.jpg';
-import AugsburgTeamImage from '../assets/id-5-stadium-photo.jpg';
+import AugsburgTeamImage from '../assets/id-5-team-photo.jpg';
+import AugsburgStadiumImage from '../assets/id-5-stadium-photo.jpg';
+
 import BayernLogo from '../assets/bayern-logo.png';
+import BayernTeamImage from '../assets/id-2-team-photo.jpg';
+import BayernStadiumImage from '../assets/id-2-stadium-photo.jpg';
+
 import DortmundLogo from '../assets/dortmund-logo.png';
 import DortmundTeamImage from '../assets/id-1-team-photo.jpg';
 import DortmundStadiumImage from '../assets/id-1-stadium-photo.jpg';
+
 import DusseldorfLogo from '../assets/dusseldorf-logo.png';
+import DusseldorfTeamImage from '../assets/id-6-team-photo.jpg';
+import DusseldorfStadiumImage from '../assets/id-6-stadium-photo.jpg';
+
 import FrankfurtLogo from '../assets/frankfurt-logo.png';
+import FrankfurtTeamImage from '../assets/id-7-team-photo.jpg';
+import FrankfurtStadiumImage from '../assets/id-7-stadium-photo.jpg';
+
 import FreiburgLogo from '../assets/freiburg-logo.png';
+import FreiburgTeamImage from '../assets/id-8-team-photo.jpg';
+import FreiburgStadiumImage from '../assets/id-8-stadium-photo.jpg';
+
 import HamburgLogo from '../assets/hamburg-logo.png';
+import HamburgTeamImage from '../assets/id-4-team-photo.jpg';
+import HamburgStadiumImage from '../assets/id-4-stadium-photo.jpg';
+
 import HannoverLogo from '../assets/hannover-logo.png';
+import HannoverTeamImage from '../assets/id-9-team-photo.jpg';
+import HannoverStadiumImage from '../assets/id-9-stadium-photo.jpg';
+
 import HerthaLogo from '../assets/hertha-logo.png';
+import HerthaTeamImage from '../assets/id-10-team-photo.jpg';
+import HerthaStadiumImage from '../assets/id-10-stadium-photo.jpg';
+
 import HoffenheimLogo from '../assets/hoffenheim-logo.png';
+import HoffenheimTeamImage from '../assets/id-11-team-photo.jpg';
+import HoffenheimStadiumImage from '../assets/id-11-stadium-photo.jpg';
+
 import KolnLogo from '../assets/koln-logo.png';
+import KolnTeamImage from '../assets/id-12-team-photo.jpg';
+import KolnStadiumImage from '../assets/id-12-stadium-photo.jpg';
+
 import LeverkusenLogo from '../assets/leverkusen-logo.png';
+import LeverkusenTeamImage from '../assets/id-13-team-photo.jpg';
+import LeverkusenStadiumImage from '../assets/id-13-stadium-photo.jpg';
+
 import MainzLogo from '../assets/mainz-logo.png';
+import MainzTeamImage from '../assets/id-14-team-photo.jpg';
+import MainzStadiumImage from '../assets/id-14-stadium-photo.jpg';
+
 import MoenchengladbachLogo from '../assets/moenchengladbach-logo.png';
+import MoenchengladbachTeamImage from '../assets/id-15-team-photo.jpg';
+import MoenchengladbachStadiumImage from '../assets/id-15-stadium-photo.jpg';
+
 import NurembergLogo from '../assets/nuremberg-logo.png';
+import NurembergTeamImage from '../assets/id-16-team-photo.jpg';
+import NurembergStadiumImage from '../assets/id-16-stadium-photo.jpg';
+
 import PaderbornLogo from '../assets/paderborn-logo.png';
+import PaderbornTeamImage from '../assets/id-17-team-photo.jpg';
+import PaderbornStadiumImage from '../assets/id-17-stadium-photo.jpg';
+
 import RBLeipzigLogo from '../assets/rb-leipzig-logo.png';
+import RBLeipzigTeamImage from '../assets/id-18-team-photo.jpg';
+import RBLeipzigStadiumImage from '../assets/id-18-stadium-photo.jpg';
+
 import SchalkeLogo from '../assets/schalke-logo.png';
+import SchalkeTeamImage from '../assets/id-3-team-photo.jpg';
+import SchalkeStadiumImage from '../assets/id-3-stadium-photo.jpg';
+
 import StuttgartLogo from '../assets/stuttgart-logo.png';
+import StuttgartTeamImage from '../assets/id-19-team-photo.jpg';
+import StuttgartStadiumImage from '../assets/id-19-stadium-photo.jpg';
+
 import UnionBerlinLogo from '../assets/union-berlin-logo.png';
+import UnionBerlinTeamImage from '../assets/id-20-team-photo.jpg';
+import UnionBerlinStadiumImage from '../assets/id-20-stadium-photo.jpg';
+
 import WerderBremenLogo from '../assets/werder-bremen-logo.png';
+import WerderBremenTeamImage from '../assets/id-21-team-photo.jpg';
+import WerderBremenStadiumImage from '../assets/id-21-stadium-photo.jpg';
+
 import WolfsburgLogo from '../assets/wolfsburg-logo.png';
+import WolfsburgTeamImage from '../assets/id-22-team-photo.jpg';
+import WolfsburgStadiumImage from '../assets/id-22-stadium-photo.jpg';
 
 export const teamInfo = [
   {
@@ -49,8 +110,8 @@ export const teamInfo = [
     secondary_color: '#1B67B4',
     location: 'Munich, Bavaria',
     nickname: 'The Reds',
-    team_image: '',
-    stadium_image: ''
+    team_image: BayernTeamImage,
+    stadium_image: BayernStadiumImage  
   },
   {
     name: 'FC Schalke 04',
@@ -62,8 +123,8 @@ export const teamInfo = [
     secondary_color: '#000',
     location: 'Gelsenkirchen, North Rhine-Westphalia',
     nickname: 'The Royal Blue',
-    team_image: '',
-    stadium_image: ''
+    team_image: SchalkeTeamImage,
+    stadium_image: SchalkeStadiumImage  
   },
   {
     name: 'Hamburger SV', 
@@ -75,8 +136,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Hamburg', 
     nickname: 'The Dinosaur', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: HamburgTeamImage, 
+    stadium_image: HamburgStadiumImage
   },
   {
     name: 'FC Augsburg', 
@@ -90,8 +151,8 @@ export const teamInfo = [
     secondary_color: '#347549', 
     location: 'Augsburg, Bavaria', 
     nickname: 'Residents of the Fugger City', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: AugsburgTeamImage, 
+    stadium_image: AugsburgStadiumImage
   }, 
   {
     name: 'Fortuna Dusseldorf', 
@@ -103,8 +164,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Dusseldorf, North Rhine-Westphalia', 
     nickname: 'From the District of Flingern', 
-    team_image: '', 
-    stadium_image: ''},
+    team_image: DusseldorfTeamImage, 
+    stadium_image: DusseldorfStadiumImage},
   {
     name: 'Eintracht Frankfurt', 
     stadium_name: 'Commerzbank-Arena', 
@@ -115,8 +176,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Frankfurt, Hesse', 
     nickname: 'The Eagles', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: FrankfurtTeamImage, 
+    stadium_image: FrankfurtStadiumImage
   },
   {
     name: 'SC Freiburg', 
@@ -128,8 +189,8 @@ export const teamInfo = [
     secondary_color: '#CC3333', 
     location: 'Freiburg im Breisgau, Baden-Wurttemberg', 
     nickname: 'Brazilians of Breisgau', 
-    team_image: '', 
-    stadium_image: ''},
+    team_image: FreiburgTeamImage, 
+    stadium_image: FreiburgStadiumImage},
   {
     name: 'Hannover 96', 
     stadium_name: 'HDI-Arena', 
@@ -140,8 +201,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Hanover, Lower Saxony', 
     nickname: 'The Reds', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: HannoverTeamImage, 
+    stadium_image: HannoverStadiumImage
   },
   {
     name: 'Hertha BSC', 
@@ -151,10 +212,10 @@ export const teamInfo = [
     team_id: 10, 
     primary_color: '#0042A5', 
     secondary_color: '#000', 
-    location: 'Charlottenburg, Berline', 
+    location: 'Charlottenburg, Berlin', 
     nickname: 'The Old Lady', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: HerthaTeamImage, 
+    stadium_image: HerthaStadiumImage
   },
   {
     name: 'TSG 1899 Hoffenheim', 
@@ -166,8 +227,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Hoffenheim, Baden-Wurttemberg', 
     nickname: 'From the Kraichgau Region', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: HoffenheimTeamImage, 
+    stadium_image: HoffenheimStadiumImage
   },
   {
     name: '1. FC Koln', 
@@ -179,8 +240,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Cologne, North Rhine-Westphalia', 
     nickname: 'The Billy Goats', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: KolnTeamImage, 
+    stadium_image: KolnStadiumImage
   },
   {
     name: 'Bayer 04 Leverkusen', 
@@ -192,8 +253,8 @@ export const teamInfo = [
     secondary_color: '#F3EA00', 
     location: 'Leverkusen, North Rhine-Westphalia', 
     nickname: 'The Eleven of the Company', 
-    team_image: '', 
-    stadium_image: ''},
+    team_image: LeverkusenTeamImage, 
+    stadium_image: LeverkusenStadiumImage},
   {
     name: '1. FSV Mainz 05', 
     stadium_name: 'Opel Arena', 
@@ -204,8 +265,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Mainz, Rhineland-Palatinate', 
     nickname: 'The O-Fives', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: MainzTeamImage, 
+    stadium_image: MainzStadiumImage
   },
   {
     name: 'Borussia Moenchengladbach', 
@@ -217,8 +278,8 @@ export const teamInfo = [
     secondary_color: '#00FF97', 
     location: 'Moenchengladbach, North Rhine-Westphalia', 
     nickname: 'The Foals', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: MoenchengladbachTeamImage, 
+    stadium_image: MoenchengladbachStadiumImage
   },
   {
     name: '1. FC Nurnberg', 
@@ -230,8 +291,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Nuremberg, Bavaria', 
     nickname: 'The Club', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: NurembergTeamImage, 
+    stadium_image: NurembergStadiumImage
   },
   {
     name: 'SC Paderborn 07', 
@@ -243,8 +304,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Paderborn, North Rhine-Westphalia', 
     nickname: '', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: PaderbornTeamImage, 
+    stadium_image: PaderbornStadiumImage
   },
   {
     name: 'RB Leipzig', 
@@ -256,8 +317,8 @@ export const teamInfo = [
     secondary_color: '#001348', 
     location: 'Leipzig, Saxony', 
     nickname: 'The Red Bulls', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: RBLeipzigTeamImage, 
+    stadium_image: RBLeipzigStadiumImage
   },
   {
     name: 'VfB Stuttgart', 
@@ -269,8 +330,8 @@ export const teamInfo = [
     secondary_color: '#FFE200', 
     location: 'Stuttgart, Baden-Wurttemberg', 
     nickname: 'The Swabians', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: StuttgartTeamImage, 
+    stadium_image: StuttgartStadiumImage
   },
   {
     name: '1. FC Union Berlin', 
@@ -282,8 +343,8 @@ export const teamInfo = [
     secondary_color: '#FFE200', 
     location: 'Kopenick, Berlin', 
     nickname: 'The Iron Ones', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: UnionBerlinTeamImage, 
+    stadium_image: UnionBerlinStadiumImage
   },
   {
     name: 'SV Werder Bremen', 
@@ -295,8 +356,8 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Bremen, Free Hanseatic City of Bremen', 
     nickname: 'The River Islanders', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: WerderBremenTeamImage, 
+    stadium_image: WerderBremenStadiumImage
   },
   {
     name: 'VfL Wolfsburg', 
@@ -308,7 +369,7 @@ export const teamInfo = [
     secondary_color: '#000', 
     location: 'Wolfsburg, Lower Saxony', 
     nickname: 'The Wolves', 
-    team_image: '', 
-    stadium_image: ''
+    team_image: WolfsburgTeamImage, 
+    stadium_image: WolfsburgStadiumImage
   },
 ];

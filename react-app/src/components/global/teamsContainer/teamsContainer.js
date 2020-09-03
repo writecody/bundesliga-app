@@ -12,11 +12,11 @@ const TeamsContainer = () => {
             return (
               <>
                 <div className="teams-container__logo-container">
-                  <a key={index} href={`http://localhost:3000/team/${object.teamId}`}>
+                  <a key={index} href={`http://localhost:3000/team/${object.team_id}`}>
                     <img
                     className="teams-container__logo" 
-                    src={object.imageFile} 
-                    alt={object.altText} />
+                    src={object.logo_image} 
+                    alt={object.alt_text} />
                   </a>
                 </div>
               </>

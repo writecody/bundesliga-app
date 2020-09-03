@@ -11,6 +11,10 @@ $regular-font: 'Noto Sans JP', sans-serif;
 $header-font:  'Contrail One', cursive;
 
 // element selectors
+a {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
