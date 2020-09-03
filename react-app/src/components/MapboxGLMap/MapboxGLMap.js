@@ -24,7 +24,7 @@ const MapboxGLMap = () => {
         container: mapContainer.current,
         style: 'mapbox://styles/writecody/ckdtn6jq80cu919pe9j9zfnd4',
         center: [10.4234469, 51.0834196],
-        zoom: 4.5
+        zoom: 4.75
       });
 
       const markerBorussiaDortmund = new mapboxgl.Marker()

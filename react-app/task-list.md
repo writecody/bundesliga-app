@@ -2,7 +2,8 @@
 - [x] Add all teams to database
 - [x] Add photos to database (including team logos)
 - [x] Dyanmically display team info on /team/< teamname > page
-- [ ] Add loading state for team page
 - [x] Add 'Back' icon to team page
+- [x] Add Mapbox map with marker for each team location
+- [ ] Add loading state for team page
+- [ ] Add bio/description for each team
 - [ ] Convert to PWA - https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli
-- [ ] Add Mapbox map with marker for each team location

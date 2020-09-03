@@ -36,6 +36,10 @@ p {
 }
 
 // custom selectors
+a.mapboxgl-ctrl-logo {
+  display: none;
+}
+
 .mapboxgl-ctrl, .mapboxgl-ctrl-attrib,.mapboxgl-compact {
   display: none;
 }
@@ -76,7 +80,6 @@ p {
 }
 
 .info-container {
-
   &__map {
     align-items: center;
     display: flex;
