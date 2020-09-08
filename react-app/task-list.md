@@ -4,6 +4,7 @@
 - [x] Dyanmically display team info on /team/< teamname > page
 - [x] Add 'Back' icon to team page
 - [x] Add Mapbox map with marker for each team location
-- [ ] Add loading state for team page
+- [x] Add loading state for team page
+- [ ] Deploy to Heroku
 - [ ] Add bio/description for each team
 - [ ] Convert to PWA - https://developers.google.com/web/tools/workbox/guides/generate-service-worker/cli

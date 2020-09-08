@@ -20,8 +20,9 @@ function Team() {
       ]).then(responses => responses.map(image => {
         return image.url;
       })).then(data => {
-        setTeamData({stadium_image: data[0], team_image: data[1]});
-      });
+        setTeamData({stadium_image: data[0], team_image: data[1]})
+        ;
+      }).catch(error => console.error(error.message));
     };
 
     fetchImages();
@@ -42,11 +43,21 @@ function Team() {
           </h1>
         </div>
 
-        <img className="team-page__image" src={teamData.team_image} alt="team logo" />
-        <h2 style={{color: `${teamObject.primary_color}`, textShadow: `-1px 0px ${teamObject.secondary_color}`}} className="team-page__caption">{teamObject.nickname}</h2>
+        {teamData.team_image === '' ? <div className="image-loader"></div> : ( 
+            <>
+            <img className="team-page__image" src={teamData.team_image} alt="team logo" />
+            <h2 style={{color: `${teamObject.primary_color}`, textShadow: `-1px 0px ${teamObject.secondary_color}`}} className="team-page__caption">{teamObject.nickname}</h2>
+            </>
+          )
+        }
 
-        <img className="team-page__image" src={teamData.stadium_image} alt={`${teamObject.name}'s stadium`}/>
-        <h2 style={{color: `${teamObject.primary_color}`, textShadow: `-1px 0px ${teamObject.secondary_color}`}} className="team-page__caption">{teamObject.stadium_name} at {teamObject.location}</h2>
+        {teamData.stadium_image === '' ? <div className="image-loader"></div> : ( 
+            <>
+              <img className="team-page__image" src={teamData.stadium_image} alt={`${teamObject.name}'s stadium`}/>
+              <h2 style={{color: `${teamObject.primary_color}`, textShadow: `-1px 0px ${teamObject.secondary_color}`}} className="team-page__caption">{teamObject.stadium_name} at {teamObject.location}</h2>
+            </>
+          )
+        }
       </div>
 
       <a onClick={goBack}><i className="fa fa-arrow-left"></i></a>
