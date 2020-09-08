@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# assets
+/src/assets/team-and-stadium-images
+
 # production
 /build
 

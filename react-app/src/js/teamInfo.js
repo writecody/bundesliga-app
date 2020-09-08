@@ -1,90 +1,90 @@
 import AugsburgLogo from '../assets/augsburg-logo.png';
-import AugsburgTeamImage from '../assets/id-5-team-photo.jpg';
-import AugsburgStadiumImage from '../assets/id-5-stadium-photo.jpg';
+import AugsburgTeamImage from '../assets/team-and-stadium-images/id-5-team-photo.jpg';
+import AugsburgStadiumImage from '../assets/team-and-stadium-images/id-5-stadium-photo.jpg';
 
 import BayernLogo from '../assets/bayern-logo.png';
-import BayernTeamImage from '../assets/id-2-team-photo.jpg';
-import BayernStadiumImage from '../assets/id-2-stadium-photo.jpg';
+import BayernTeamImage from '../assets/team-and-stadium-images/id-2-team-photo.jpg';
+import BayernStadiumImage from '../assets/team-and-stadium-images/id-2-stadium-photo.jpg';
 
 import DortmundLogo from '../assets/dortmund-logo.png';
-import DortmundTeamImage from '../assets/id-1-team-photo.jpg';
-import DortmundStadiumImage from '../assets/id-1-stadium-photo.jpg';
+import DortmundTeamImage from '../assets/team-and-stadium-images/id-1-team-photo.jpg';
+import DortmundStadiumImage from '../assets/team-and-stadium-images/id-1-stadium-photo.jpg';
 
 import DusseldorfLogo from '../assets/dusseldorf-logo.png';
-import DusseldorfTeamImage from '../assets/id-6-team-photo.jpg';
-import DusseldorfStadiumImage from '../assets/id-6-stadium-photo.jpg';
+import DusseldorfTeamImage from '../assets/team-and-stadium-images/id-6-team-photo.jpg';
+import DusseldorfStadiumImage from '../assets/team-and-stadium-images/id-6-stadium-photo.jpg';
 
 import FrankfurtLogo from '../assets/frankfurt-logo.png';
-import FrankfurtTeamImage from '../assets/id-7-team-photo.jpg';
-import FrankfurtStadiumImage from '../assets/id-7-stadium-photo.jpg';
+import FrankfurtTeamImage from '../assets/team-and-stadium-images/id-7-team-photo.jpg';
+import FrankfurtStadiumImage from '../assets/team-and-stadium-images/id-7-stadium-photo.jpg';
 
 import FreiburgLogo from '../assets/freiburg-logo.png';
-import FreiburgTeamImage from '../assets/id-8-team-photo.jpg';
-import FreiburgStadiumImage from '../assets/id-8-stadium-photo.jpg';
+import FreiburgTeamImage from '../assets/team-and-stadium-images/id-8-team-photo.jpg';
+import FreiburgStadiumImage from '../assets/team-and-stadium-images/id-8-stadium-photo.jpg';
 
 import HamburgLogo from '../assets/hamburg-logo.png';
-import HamburgTeamImage from '../assets/id-4-team-photo.jpg';
-import HamburgStadiumImage from '../assets/id-4-stadium-photo.jpg';
+import HamburgTeamImage from '../assets/team-and-stadium-images/id-4-team-photo.jpg';
+import HamburgStadiumImage from '../assets/team-and-stadium-images/id-4-stadium-photo.jpg';
 
 import HannoverLogo from '../assets/hannover-logo.png';
-import HannoverTeamImage from '../assets/id-9-team-photo.jpg';
-import HannoverStadiumImage from '../assets/id-9-stadium-photo.jpg';
+import HannoverTeamImage from '../assets/team-and-stadium-images/id-9-team-photo.jpg';
+import HannoverStadiumImage from '../assets/team-and-stadium-images/id-9-stadium-photo.jpg';
 
 import HerthaLogo from '../assets/hertha-logo.png';
-import HerthaTeamImage from '../assets/id-10-team-photo.jpg';
-import HerthaStadiumImage from '../assets/id-10-stadium-photo.jpg';
+import HerthaTeamImage from '../assets/team-and-stadium-images/id-10-team-photo.jpg';
+import HerthaStadiumImage from '../assets/team-and-stadium-images/id-10-stadium-photo.jpg';
 
 import HoffenheimLogo from '../assets/hoffenheim-logo.png';
-import HoffenheimTeamImage from '../assets/id-11-team-photo.jpg';
-import HoffenheimStadiumImage from '../assets/id-11-stadium-photo.jpg';
+import HoffenheimTeamImage from '../assets/team-and-stadium-images/id-11-team-photo.jpg';
+import HoffenheimStadiumImage from '../assets/team-and-stadium-images/id-11-stadium-photo.jpg';
 
 import KolnLogo from '../assets/koln-logo.png';
-import KolnTeamImage from '../assets/id-12-team-photo.jpg';
-import KolnStadiumImage from '../assets/id-12-stadium-photo.jpg';
+import KolnTeamImage from '../assets/team-and-stadium-images/id-12-team-photo.jpg';
+import KolnStadiumImage from '../assets/team-and-stadium-images/id-12-stadium-photo.jpg';
 
 import LeverkusenLogo from '../assets/leverkusen-logo.png';
-import LeverkusenTeamImage from '../assets/id-13-team-photo.jpg';
-import LeverkusenStadiumImage from '../assets/id-13-stadium-photo.jpg';
+import LeverkusenTeamImage from '../assets/team-and-stadium-images/id-13-team-photo.jpg';
+import LeverkusenStadiumImage from '../assets/team-and-stadium-images/id-13-stadium-photo.jpg';
 
 import MainzLogo from '../assets/mainz-logo.png';
-import MainzTeamImage from '../assets/id-14-team-photo.jpg';
-import MainzStadiumImage from '../assets/id-14-stadium-photo.jpg';
+import MainzTeamImage from '../assets/team-and-stadium-images/id-14-team-photo.jpg';
+import MainzStadiumImage from '../assets/team-and-stadium-images/id-14-stadium-photo.jpg';
 
 import MoenchengladbachLogo from '../assets/moenchengladbach-logo.png';
-import MoenchengladbachTeamImage from '../assets/id-15-team-photo.jpg';
-import MoenchengladbachStadiumImage from '../assets/id-15-stadium-photo.jpg';
+import MoenchengladbachTeamImage from '../assets/team-and-stadium-images/id-15-team-photo.jpg';
+import MoenchengladbachStadiumImage from '../assets/team-and-stadium-images/id-15-stadium-photo.jpg';
 
 import NurembergLogo from '../assets/nuremberg-logo.png';
-import NurembergTeamImage from '../assets/id-16-team-photo.jpg';
-import NurembergStadiumImage from '../assets/id-16-stadium-photo.jpg';
+import NurembergTeamImage from '../assets/team-and-stadium-images/id-16-team-photo.jpg';
+import NurembergStadiumImage from '../assets/team-and-stadium-images/id-16-stadium-photo.jpg';
 
 import PaderbornLogo from '../assets/paderborn-logo.png';
-import PaderbornTeamImage from '../assets/id-17-team-photo.jpg';
-import PaderbornStadiumImage from '../assets/id-17-stadium-photo.jpg';
+import PaderbornTeamImage from '../assets/team-and-stadium-images/id-17-team-photo.jpg';
+import PaderbornStadiumImage from '../assets/team-and-stadium-images/id-17-stadium-photo.jpg';
 
 import RBLeipzigLogo from '../assets/rb-leipzig-logo.png';
-import RBLeipzigTeamImage from '../assets/id-18-team-photo.jpg';
-import RBLeipzigStadiumImage from '../assets/id-18-stadium-photo.jpg';
+import RBLeipzigTeamImage from '../assets/team-and-stadium-images/id-18-team-photo.jpg';
+import RBLeipzigStadiumImage from '../assets/team-and-stadium-images/id-18-stadium-photo.jpg';
 
 import SchalkeLogo from '../assets/schalke-logo.png';
-import SchalkeTeamImage from '../assets/id-3-team-photo.jpg';
-import SchalkeStadiumImage from '../assets/id-3-stadium-photo.jpg';
+import SchalkeTeamImage from '../assets/team-and-stadium-images/id-3-team-photo.jpg';
+import SchalkeStadiumImage from '../assets/team-and-stadium-images/id-3-stadium-photo.jpg';
 
 import StuttgartLogo from '../assets/stuttgart-logo.png';
-import StuttgartTeamImage from '../assets/id-19-team-photo.jpg';
-import StuttgartStadiumImage from '../assets/id-19-stadium-photo.jpg';
+import StuttgartTeamImage from '../assets/team-and-stadium-images/id-19-team-photo.jpg';
+import StuttgartStadiumImage from '../assets/team-and-stadium-images/id-19-stadium-photo.jpg';
 
 import UnionBerlinLogo from '../assets/union-berlin-logo.png';
-import UnionBerlinTeamImage from '../assets/id-20-team-photo.jpg';
-import UnionBerlinStadiumImage from '../assets/id-20-stadium-photo.jpg';
+import UnionBerlinTeamImage from '../assets/team-and-stadium-images/id-20-team-photo.jpg';
+import UnionBerlinStadiumImage from '../assets/team-and-stadium-images/id-20-stadium-photo.jpg';
 
 import WerderBremenLogo from '../assets/werder-bremen-logo.png';
-import WerderBremenTeamImage from '../assets/id-21-team-photo.jpg';
-import WerderBremenStadiumImage from '../assets/id-21-stadium-photo.jpg';
+import WerderBremenTeamImage from '../assets/team-and-stadium-images/id-21-team-photo.jpg';
+import WerderBremenStadiumImage from '../assets/team-and-stadium-images/id-21-stadium-photo.jpg';
 
 import WolfsburgLogo from '../assets/wolfsburg-logo.png';
-import WolfsburgTeamImage from '../assets/id-22-team-photo.jpg';
-import WolfsburgStadiumImage from '../assets/id-22-stadium-photo.jpg';
+import WolfsburgTeamImage from '../assets/team-and-stadium-images/id-22-team-photo.jpg';
+import WolfsburgStadiumImage from '../assets/team-and-stadium-images/id-22-stadium-photo.jpg';
 
 export const teamInfo = [
   {
@@ -145,8 +145,6 @@ export const teamInfo = [
     logo_image: AugsburgLogo, 
     alt_text: 'FC Augsburg logo', 
     team_id: 5, 
-    team_image: AugsburgTeamImage, 
-    stadium_image: AugsburgStadiumImage, 
     primary_color: '#CA1C19', 
     secondary_color: '#347549', 
     location: 'Augsburg, Bavaria', 
@@ -165,7 +163,8 @@ export const teamInfo = [
     location: 'Dusseldorf, North Rhine-Westphalia', 
     nickname: 'From the District of Flingern', 
     team_image: DusseldorfTeamImage, 
-    stadium_image: DusseldorfStadiumImage},
+    stadium_image: DusseldorfStadiumImage
+  },
   {
     name: 'Eintracht Frankfurt', 
     stadium_name: 'Commerzbank-Arena', 
@@ -190,7 +189,8 @@ export const teamInfo = [
     location: 'Freiburg im Breisgau, Baden-Wurttemberg', 
     nickname: 'Brazilians of Breisgau', 
     team_image: FreiburgTeamImage, 
-    stadium_image: FreiburgStadiumImage},
+    stadium_image: FreiburgStadiumImage
+  },
   {
     name: 'Hannover 96', 
     stadium_name: 'HDI-Arena', 
@@ -254,7 +254,8 @@ export const teamInfo = [
     location: 'Leverkusen, North Rhine-Westphalia', 
     nickname: 'The Eleven of the Company', 
     team_image: LeverkusenTeamImage, 
-    stadium_image: LeverkusenStadiumImage},
+    stadium_image: LeverkusenStadiumImage
+  },
   {
     name: '1. FSV Mainz 05', 
     stadium_name: 'Opel Arena', 

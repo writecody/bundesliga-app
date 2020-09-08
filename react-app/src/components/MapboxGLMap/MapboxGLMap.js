@@ -8,11 +8,6 @@ const styles = {
   width: "100%",
 };
 
-const markerInfo = {
-  lngLatData: [10, 51],
-  markerText: 'ExampleText1'
-}
-
 const MapboxGLMap = () => {
   const [map, setMap] = useState(null);
   const mapContainer = useRef(null);

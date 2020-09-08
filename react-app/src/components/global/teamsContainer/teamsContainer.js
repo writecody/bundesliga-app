@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../index.css';
-import { teamInfo } from '../../teamInfo';
+import { teamInfo } from '../../../js/teamInfo';
 
 import MapboxGLMap from '../../MapboxGLMap/MapboxGLMap';
 
@@ -29,9 +29,9 @@ const TeamsContainer = () => {
         </div>
         <div className="info-container__links">
           <p>Learn more about the Bundesliga via the links below:</p>
-          <a className="info-container__section__link" href="https://www.bundesliga.com" target="_blank">Bundesliga Official Website</a>
-          <a className="info-container__section__link" href="https://en.wikipedia.org/wiki/Bundesliga" target="_blank">Bundesliga Wikipedia Article</a>
-          <a className="info-container__section__link" href="https://www.dfb.de/en/en-start/" target="_blank">Deutscher Fussball-Bund (German Football Association)</a>
+          <a className="info-container__section__link" href="https://www.bundesliga.com" target="_blank" rel="noopener noreferrer">Bundesliga Official Website</a>
+          <a className="info-container__section__link" href="https://en.wikipedia.org/wiki/Bundesliga" target="_blank" rel="noopener noreferrer">Bundesliga Wikipedia Article</a>
+          <a className="info-container__section__link" href="https://www.dfb.de/en/en-start/" target="_blank" rel="noopener noreferrer">Deutscher Fussball-Bund (German Football Association)</a>
         </div>
       </div>
     </>
