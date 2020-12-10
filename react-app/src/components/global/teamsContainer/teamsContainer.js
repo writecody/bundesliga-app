@@ -11,8 +11,8 @@ const TeamsContainer = () => {
           {teamInfo.map((object, index) => {
             return (
               <>
-                <div className="teams-container__logo-container">
-                  <a key={index} href={`http://localhost:3000/team/${object.team_id}`}>
+                <div key={index} className="teams-container__logo-container">
+                  <a href={`/team/${object.team_id}`}>
                     <img
                     className="teams-container__logo" 
                     src={object.logo_image} 
